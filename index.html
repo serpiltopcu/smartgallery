@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Smart Gallery</title>
-  <meta name="description" content="Smart Gallery helps users organize their photo library and Gmail inbox by finding duplicate photos, blurry images, and subscription emails." />
+  <meta name="description" content="Smart Gallery helps users organize their photo library and Gmail inbox by removing duplicate photos, finding blurry images, and managing subscription emails." />
   <style>
     :root {
       --bg: #f8fafc;
@@ -53,8 +53,9 @@ body {
 }
 
 h1 {
-  font-size: 44px;
+  font-size: 46px;
   margin-bottom: 16px;
+  letter-spacing: -0.5px;
 }
 
 .subtitle {
@@ -76,6 +77,14 @@ h2 {
   margin-top: 0;
   color: var(--text);
   font-size: 30px;
+}
+
+.highlight {
+  background: #f3e8ff;
+  border-left: 4px solid var(--accent);
+  padding: 18px;
+  border-radius: 12px;
+  margin: 24px 0;
 }
 
 .features {
@@ -108,10 +117,10 @@ h2 {
   background: var(--accent);
   color: white;
   text-decoration: none;
-  padding: 14px 22px;
+  padding: 14px 24px;
   border-radius: 14px;
   font-weight: 600;
-  margin-top: 24px;
+  margin-top: 28px;
 }
 
 .button:hover {
@@ -145,7 +154,7 @@ footer {
 }
 
 @media (max-width: 640px) {
-  h1 { font-size: 34px; }
+  h1 { font-size: 36px; }
   .subtitle { font-size: 18px; }
   .container { padding: 40px 20px; }
 }
@@ -160,10 +169,11 @@ footer {
 <section class="hero">
   <div class="logo">SG</div>
   <h1>Smart Gallery</h1>
+
   <p class="subtitle">
-    Smart Gallery helps users organize their photo library and Gmail inbox,
-    remove duplicates, identify blurry photos, manage subscription emails,
-    and free up storage space securely.
+    Smart Gallery is a productivity app that helps users organize their photo library and Gmail inbox.
+    The app removes duplicate photos, identifies blurry images, detects subscription emails,
+    and helps users unsubscribe from unwanted mailing lists and clean up their inbox.
   </p>
 
   <a class="button" href="https://apps.apple.com/us/app/smart-gallery-photo-cleaner/id6783930004" target="_blank" rel="noopener">
@@ -175,40 +185,19 @@ footer {
   <h2>Application purpose</h2>
 
   <p>
-    Smart Gallery is a productivity application designed to help users organize
-    and clean both their photo library and Gmail inbox.
+    Smart Gallery is designed to help users organize and clean both their photo library and Gmail inbox.
+    The application analyzes photo and email content in order to identify unnecessary items and improve organization.
   </p>
 
-  <p>
-    The application allows users to find duplicate and blurry photos,
-    organize screenshots and similar images, free up device storage,
-    analyze Gmail categories, identify subscription emails,
-    unsubscribe from unwanted mailing lists,
-    and move unwanted emails to the trash.
-  </p>
+  <div class="highlight">
+    <strong>Why Gmail access is required</strong><br><br>
+    Smart Gallery requests Gmail access only after the user explicitly signs in with Google and grants permission.
+    Gmail access is used exclusively to identify subscription emails, analyze Gmail categories,
+    help users unsubscribe from unwanted mailing lists, and move unwanted emails to the trash.
+  </div>
 
   <p>
-    Gmail access is used solely to provide inbox organization and subscription
-    cleanup features requested by the user.
-  </p>
-</section>
-
-<section class="card">
-  <h2>Gmail access and privacy</h2>
-
-  <p>
-    Smart Gallery only accesses Gmail data after the user explicitly signs in
-    with Google and grants permission.
-  </p>
-
-  <p>
-    The application reads Gmail categories and subscription information in order
-    to help users identify newsletters and unsubscribe from unwanted emails.
-  </p>
-
-  <p>
-    Smart Gallery does not sell user data and only accesses the Gmail information
-    necessary to provide the requested functionality.
+    Gmail data is accessed solely to provide the inbox organization and subscription cleanup features requested by the user.
   </p>
 </section>
 
@@ -218,7 +207,7 @@ footer {
   <div class="features">
     <div class="feature">
       <h3>Duplicate photo detection</h3>
-      <p>Find and remove duplicate photos quickly.</p>
+      <p>Find and remove duplicate photos quickly and safely.</p>
     </div>
 
     <div class="feature">
@@ -227,24 +216,40 @@ footer {
     </div>
 
     <div class="feature">
-      <h3>Gmail subscription cleanup</h3>
+      <h3>Screenshot organization</h3>
+      <p>Organize screenshots and similar images automatically.</p>
+    </div>
+
+    <div class="feature">
+      <h3>Gmail subscription management</h3>
       <p>Find newsletters and unsubscribe from unwanted mailing lists.</p>
     </div>
 
     <div class="feature">
+      <h3>Inbox cleanup</h3>
+      <p>Move unwanted emails to the trash and reduce inbox clutter.</p>
+    </div>
+
+    <div class="feature">
       <h3>Storage optimization</h3>
-      <p>Free up space by removing unnecessary photos and emails.</p>
+      <p>Free up device storage by removing unnecessary photos and emails.</p>
     </div>
   </div>
 </section>
 
 <section class="card">
-  <h2>Privacy and contact</h2>
+  <h2>Privacy and data use</h2>
 
   <p>
-    All photo processing is performed on the device whenever possible.
-    Gmail access is limited to the permissions explicitly granted by the user.
+    Smart Gallery is committed to protecting user privacy.
   </p>
+
+  <ul>
+    <li>Google sign-in is required before Gmail data can be accessed.</li>
+    <li>Gmail access is limited to the permissions granted by the user.</li>
+    <li>Gmail data is used only to provide inbox organization and subscription cleanup features.</li>
+    <li>Smart Gallery does not sell user data.</li>
+  </ul>
 
   <div class="links">
     <a href="https://serpiltopcu.github.io/smartgallery-privacy">Privacy Policy</a>
