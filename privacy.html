@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Smart Gallery — Privacy Policy</title>
+<style>
+  :root {
+    --bg:        #ffffff;
+    --bg-card:   #FFFFFF;
+    --bg-note:   #F0EDFB;
+    --text:      #000000;
+    --text-sub:  #000000;
+    --text-faint:#000000;
+    --accent:    #7C3AED;
+    --accent-lt: #A78BFA;
+    --border:    #E4E0F0;
+    --rule:      #D6D0EC;
+    --bullet-bg: #EDE9FA;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:        #0D0B14;
+      --bg-card:   #15121F;
+      --bg-note:   #1C1730;
+      --text:      #EBE7FF;
+      --text-sub:  #9490A8;
+      --text-faint:#5A5570;
+      --accent:    #A78BFA;
+      --accent-lt: #C4B5FD;
+      --border:    #2A2440;
+      --rule:      #342D55;
+      --bullet-bg: #221D38;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg:        #0D0B14;
+    --bg-card:   #15121F;
+    --bg-note:   #1C1730;
+    --text:      #EBE7FF;
+    --text-sub:  #9490A8;
+    --text-faint:#5A5570;
+    --accent:    #A78BFA;
+    --accent-lt: #C4B5FD;
+    --border:    #2A2440;
+    --rule:      #342D55;
+    --bullet-bg: #221D38;
+  }
+  :root[data-theme="light"] {
+    --bg:        #ffffff;
+    --bg-card:   #FFFFFF;
+    --bg-note:   #F0EDFB;
+    --text:      #000000;
+    --text-sub:  #000000;
+    --text-faint:#000000;
+    --accent:    #7C3AED;
+    --accent-lt: #A78BFA;
+    --border:    #E4E0F0;
+    --rule:      #D6D0EC;
+    --bullet-bg: #EDE9FA;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    padding: 0 20px 80px;
+  }
+
+  .wrap {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  .site-header {
+    padding: 40px 0 32px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 36px;
+  }
+
+  .app-name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 6px;
+  }
+
+  .app-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 9px;
+    background: var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+
+  .app-label {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+  }
+
+  .page-title {
+    font-size: clamp(24px, 5vw, 32px);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--text);
+    line-height: 1.2;
+    text-wrap: balance;
+    margin-bottom: 16px;
+  }
+
+  .header-meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .updated-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    color: var(--text-faint);
+    background: var(--bg-note);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 4px 12px;
+    font-weight: 500;
+  }
+
+  .lang-toggle {
+    display: inline-flex;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    background: var(--bg-card);
+  }
+
+  .lang-btn {
+    padding: 6px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    color: var(--text-sub);
+    transition: background 0.15s, color 0.15s;
+    letter-spacing: 0.03em;
+  }
+
+  .lang-btn:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: -2px;
+  }
+
+  .lang-btn.active {
+    background: var(--accent);
+    color: #fff;
+  }
+
+  .policy-content { display: none; }
+  .policy-content.visible { display: block; }
+
+  .section {
+    padding: 28px 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .section:last-child { border-bottom: none; }
+
+  .section-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: 0.01em;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+  }
+
+  .section-body {
+    font-size: 15px;
+    color: var(--text-sub);
+    line-height: 1.75;
+    white-space: pre-line;
+  }
+
+  .section-body + .bullet-list { margin-top: 14px; }
+
+  .bullet-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 12px;
+  }
+
+  .bullet-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14px;
+    color: var(--text-sub);
+    line-height: 1.6;
+  }
+
+  .bullet-list li::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent-lt);
+    flex-shrink: 0;
+    margin-top: 7px;
+  }
+
+  .note {
+    margin-top: 14px;
+    padding: 12px 16px;
+    background: var(--bg-note);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+    font-size: 13px;
+    color: var(--text-faint);
+    font-style: italic;
+  }
+
+  .site-footer {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    font-size: 12px;
+    color: var(--text-faint);
+    text-align: center;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 480px) {
+    .site-header { padding: 28px 0 24px; }
+    .section { padding: 22px 0; }
+  }
+
+  @media print {
+    body { background: #fff; color: #000; }
+    .lang-toggle { display: none; }
+    .policy-content { display: block !important; }
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="site-header">
+    <div class="app-name">
+      <div class="app-icon">📷</div>
+      <span class="app-label">Smart Gallery</span>
+    </div>
+    <h1 class="page-title" id="page-title">Privacy Policy</h1>
+    <div class="header-meta">
+      <span class="updated-chip">
+        <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+          <circle cx="6" cy="6" r="5" stroke="currentColor" stroke-width="1.4"/>
+          <path d="M6 3.5V6l1.5 1.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+        </svg>
+        <span id="updated-label">Last updated: July 10, 2026</span>
+      </span>
+      <div class="lang-toggle" role="group" aria-label="Language">
+        <button class="lang-btn" id="btn-en" onclick="setLang('en')">EN</button>
+        <button class="lang-btn active" id="btn-tr" onclick="setLang('tr')">TR</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ── English ─────────────────────────────── -->
+  <div class="policy-content" id="content-en">
+
+    <div class="section">
+      <h2 class="section-title">1. Information We Collect</h2>
+      <p class="section-body">Smart Gallery: Photo Cleaner does not collect, store, or share any personal data by default — all photo and video processing is performed entirely on your device. The one exception is the optional "Email Cleaner" feature, which you can choose to enable; see Section 4 below for exactly how it works.</p>
+      <ul class="bullet-list">
+        <li>We do not access your photos or videos beyond what is necessary to display and organize them within the app.</li>
+        <li>We do not upload your photo or video files to external servers.</li>
+        <li>Unless you use the Email Cleaner feature, we do not collect your name, email address, or any other identifying information.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">2. Photo Library Access</h2>
+      <p class="section-body">The app requires access to your photo library to detect duplicate/similar photos and videos, compress videos, and help you clean your gallery. This access is used solely within the app and no photos or videos leave your device.</p>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">3. Face Detection &amp; Grouping</h2>
+      <p class="section-body">The app uses on-device face detection to automatically group similar portraits. This processing happens entirely on your device. No face data or biometric information ever leaves your device, is stored, or is shared with third parties.</p>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">4. Gmail Integration (Email Cleaner)</h2>
+      <p class="section-body">The app offers an optional "Email Cleaner" feature. It only activates when you explicitly connect a Gmail account, and works through Google's official OAuth authentication system — we never see or store your Gmail password.</p>
+      <ul class="bullet-list">
+        <li>We read the connected account's email address, message headers (sender, subject, date), and Gmail's category labels (Social, Promotions, Updates, Forums). We do not read the body/content of your emails.</li>
+        <li>Your access and refresh tokens are stored only in your device's secure, hardware-backed storage (iOS Keychain); since we do not operate any servers, this data is never transmitted anywhere by us.</li>
+        <li>This data is used solely for actions you initiate: counting/listing emails by category, moving emails you select to Gmail's trash, and opening unsubscribe links.</li>
+        <li>Emails we delete are not permanently erased — they are moved to Gmail's own trash and can be recovered from within Gmail for 30 days.</li>
+        <li>You can disconnect a connected account at any time from within the app, and can always revoke access from your Google account settings (myaccount.google.com/permissions).</li>
+      </ul>
+      <div class="note">Use of this feature is subject to the Google API Services User Data Policy, including the Limited Use requirements.</div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">5. Purchases &amp; Subscriptions</h2>
+      <p class="section-body">Smart Gallery offers an optional Premium yearly subscription. All purchases are processed securely through Apple's App Store. We do not collect or store any payment information.
+
+Purchase history is managed by Apple and RevenueCat, which processes subscription status on our behalf. RevenueCat may collect anonymous purchase data (e.g. subscription status, purchase date) to manage entitlements. No personally identifiable information is shared.</p>
+      <div class="note">RevenueCat privacy policy: revenuecat.com/privacy</div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">6. Third-Party Services</h2>
+      <p class="section-body">We use the following third-party services:</p>
+      <ul class="bullet-list">
+        <li><strong>RevenueCat</strong> – subscription management. Collects anonymous purchase data only.</li>
+        <li><strong>Apple App Store</strong> – payment processing and app distribution.</li>
+        <li><strong>Sentry</strong> – crash reporting. Collects anonymous device and error information to help us fix bugs. No personal photos or file contents are transmitted.</li>
+        <li><strong>Google (Gmail API)</strong> – used only if you connect the Email Cleaner feature. See Section 4 for details.</li>
+      </ul>
+      <div class="note">No advertising or user tracking SDKs are used in this app.</div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">7. Children's Privacy</h2>
+      <p class="section-body">This app is not directed at children under the age of 13. We do not knowingly collect any personal information from children.</p>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">8. Changes to This Policy</h2>
+      <p class="section-body">We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated date.</p>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">9. Contact</h2>
+      <p class="section-body">If you have any questions about this Privacy Policy, please contact us at:
+
+serpilbosnali@gmail.com</p>
+    </div>
+
+  </div>
+
+  <!-- ── Turkish ─────────────────────────────── -->
+  <div class="policy-content visible" id="content-tr">
+
+    <div class="section">
+      <h2 class="section-title">1. Topladığımız Bilgiler</h2>
+      <p class="section-body">Smart Gallery: Photo Cleaner, varsayılan olarak hiçbir kişisel veri toplamaz, depolamaz veya paylaşmaz — tüm fotoğraf ve video işlemleri tamamen cihazınızda gerçekleştirilir. Uygulama içinde isteğe bağlı olarak etkinleştirebileceğiniz "E-posta Temizleyici" özelliği bu kuralın tek istisnasıdır; bu özellik nasıl çalışır, aşağıdaki 4. bölümde ayrıntılı olarak açıklanmıştır.</p>
+      <ul class="bullet-list">
+        <li>Fotoğraf ve videolarınıza yalnızca uygulama içinde görüntülemek ve düzenlemek için gerekli olan erişimi kullanıyoruz.</li>
+        <li>Fotoğraf veya video dosyalarınızı harici sunuculara yüklemiyoruz.</li>
+        <li>E-posta Temizleyici özelliğini kullanmadığınız sürece adınızı, e-posta adresinizi veya diğer kimlik bilgilerinizi toplamıyoruz.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">2. Fotoğraf Kütüphanesi Erişimi</h2>
+      <p class="section-body">Uygulama, tekrar eden/benzer fotoğraf ve videoları tespit etmek, sıkıştırmak ve galerinizi temizlemenize yardımcı olmak için fotoğraf kütüphanenize erişim gerektirir. Bu erişim yalnızca uygulama içinde kullanılır ve hiçbir fotoğraf ya da video cihazınızdan çıkmaz.</p>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">3. Yüz Tespiti ve Gruplama</h2>
+      <p class="section-body">Uygulama, benzer portreleri otomatik olarak gruplamak için cihaz üzerinde yüz tespiti yapar. Bu işlem tamamen cihazınızda gerçekleşir; yüz verileri veya biyometrik bilgiler hiçbir zaman cihazınızdan çıkmaz, depolanmaz veya üçüncü taraflarla paylaşılmaz.</p>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">4. Gmail Entegrasyonu (E-posta Temizleyici)</h2>
+      <p class="section-body">Uygulama, isteğe bağlı bir "E-posta Temizleyici" özelliği sunar. Bu özellik yalnızca siz açıkça bir Gmail hesabı bağladığınızda etkinleşir ve Google'ın resmi OAuth kimlik doğrulama sistemi üzerinden çalışır — Gmail şifrenizi hiçbir zaman görmeyiz ya da saklamayız.</p>
+      <ul class="bullet-list">
+        <li>Bağladığınız hesabın e-posta adresini, mail başlıklarını (gönderen, konu, tarih) ve Gmail'in kategori bilgisini (Sosyal, Promosyon, Güncelleme, Forum) okuruz. Mail içeriğini/gövdesini okumayız.</li>
+        <li>Erişim ve yenileme token'larınız yalnızca cihazınızın güvenli donanım destekli deposunda (iOS Keychain) saklanır; bizim bir sunucumuz olmadığı için bu veriler hiçbir yere iletilmez.</li>
+        <li>Bu veriler yalnızca sizin başlattığınız işlemler için kullanılır: kategori bazlı mail sayımı/listeleme, seçtiğiniz mailleri Gmail çöp kutusuna taşıma, ve abonelikten çıkma (unsubscribe) bağlantılarını açma.</li>
+        <li>Sildiğimiz mailler kalıcı olarak silinmez — Gmail'in kendi çöp kutusuna taşınır, 30 gün içinde Gmail üzerinden geri alınabilir.</li>
+        <li>Bağladığınız hesabı istediğiniz an uygulama içinden kaldırabilirsiniz; ayrıca Google hesap ayarlarınızdan (myaccount.google.com/permissions) erişimi her zaman iptal edebilirsiniz.</li>
+      </ul>
+      <div class="note">Bu özelliğin kullanımı Google API Services User Data Policy'ye (Limited Use şartları dahil) tabidir.</div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">5. Satın Almalar ve Abonelikler</h2>
+      <p class="section-body">Smart Gallery isteğe bağlı bir Premium yıllık abonelik sunar. Tüm satın almalar Apple App Store aracılığıyla güvenli şekilde işlenir. Herhangi bir ödeme bilgisi toplamaz veya depolamayız.
+
+Satın alma geçmişi Apple ve RevenueCat tarafından yönetilir. RevenueCat, yetkilendirmeleri yönetmek amacıyla anonim satın alma verilerini (abonelik durumu, satın alma tarihi gibi) toplayabilir. Kişisel tanımlanabilir hiçbir bilgi paylaşılmaz.</p>
+      <div class="note">RevenueCat gizlilik politikası: revenuecat.com/privacy</div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">6. Üçüncü Taraf Hizmetler</h2>
+      <p class="section-body">Aşağıdaki üçüncü taraf hizmetleri kullanmaktayız:</p>
+      <ul class="bullet-list">
+        <li><strong>RevenueCat</strong> – abonelik yönetimi. Yalnızca anonim satın alma verilerini toplar.</li>
+        <li><strong>Apple App Store</strong> – ödeme işleme ve uygulama dağıtımı.</li>
+        <li><strong>Sentry</strong> – çökme raporlama. Uygulama hatalarını tespit etmek için anonim cihaz ve hata bilgisi toplar. Kişisel fotoğraf ya da dosya içeriği iletilmez.</li>
+        <li><strong>Google (Gmail API)</strong> – yalnızca E-posta Temizleyici özelliğini bağladığınızda kullanılır. Ayrıntılar için 4. bölüme bakın.</li>
+      </ul>
+      <div class="note">Bu uygulamada reklam veya kullanıcı izleme SDK'sı kullanılmamaktadır.</div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">7. Çocukların Gizliliği</h2>
+      <p class="section-body">Bu uygulama 13 yaşın altındaki çocuklara yönelik değildir. Çocuklardan bilerek kişisel bilgi toplamıyoruz.</p>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">8. Bu Politikadaki Değişiklikler</h2>
+      <p class="section-body">Bu Gizlilik Politikasını zaman zaman güncelleyebiliriz. Değişiklikler, güncellenmiş tarihle birlikte bu sayfada yansıtılacaktır.</p>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">9. İletişim</h2>
+      <p class="section-body">Bu Gizlilik Politikası hakkında sorularınız için lütfen bizimle iletişime geçin:
+
+serpilbosnali@gmail.com</p>
+    </div>
+
+  </div>
+
+  <footer class="site-footer">
+    Smart Gallery © 2026 · smartgalleryphoto@gmail.com
+  </footer>
+</div>
+
+<script>
+  const titles = { en: 'Privacy Policy', tr: 'Gizlilik Politikası' };
+  const updatedLabels = {
+    en: 'Last updated: July 10, 2026',
+    tr: 'Son güncelleme: 10 Temmuz 2026'
+  };
+
+  function setLang(lang) {
+    document.getElementById('content-en').classList.toggle('visible', lang === 'en');
+    document.getElementById('content-tr').classList.toggle('visible', lang === 'tr');
+    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    document.getElementById('btn-tr').classList.toggle('active', lang === 'tr');
+    document.getElementById('page-title').textContent = titles[lang];
+    document.getElementById('updated-label').textContent = updatedLabels[lang];
+    document.documentElement.lang = lang;
+  }
+
+  setLang('tr');
+</script>
+</body>
+</html>
