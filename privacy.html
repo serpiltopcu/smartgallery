@@ -532,37 +532,79 @@ Yüz tespiti ve gruplama tamamen cihazınızda gerçekleştirilir. Yüz verileri
 
 
 <div class="section">
-<h2 class="section-title">4. Gmail Entegrasyonu (E-posta Temizleyici)</h2>
+  <h2 class="section-title">4. Gmail Entegrasyonu (E-posta Temizleyici)</h2>
 
-<p class="section-body">
-Smart Gallery isteğe bağlı bir "E-posta Temizleyici" özelliği sunar. Gmail erişimi yalnızca Google hesabınızı Google'ın resmi OAuth kimlik doğrulama sistemi üzerinden bağlamayı açıkça seçtiğinizde etkinleştirilir.
+  <p class="section-body">
+    Uygulama, isteğe bağlı bir "E-posta Temizleyici" özelliği sunar. Bu özellik
+    yalnızca açıkça bir Gmail hesabı bağlamayı seçtiğinizde etkinleşir.
+    Kimlik doğrulama Google'ın resmi OAuth sistemi üzerinden gerçekleştirilir.
+    Gmail şifrenizi hiçbir zaman görmeyiz, toplamayız veya saklamayız.
+  </p>
 
-Smart Gallery Google şifrenizi almaz veya saklamaz.
-</p>
+  <ul class="bullet-list">
+    <li>
+      Bağladığınız hesabın e-posta adresine, gönderen, konu ve tarih gibi
+      mesaj üst bilgilerine ve Gmail kategori etiketlerine (Sosyal, Promosyonlar,
+      Güncellemeler ve Forumlar dahil) erişiriz. E-postalarınızın gövdesini veya
+      içeriğini kasıtlı olarak okumayız veya işlemeyiz.
+    </li>
 
-<ul class="bullet-list">
-<li>Bağladığınız Google hesabının e-posta adresine, gönderen, konu ve tarih gibi mesaj başlıklarına ve Sosyal, Promosyonlar, Güncellemeler ve Forumlar gibi Gmail kategori bilgilerine erişiriz.</li>
+    <li>
+      Gmail verileri yalnızca sizin açıkça talep ettiğiniz E-posta Temizleyici
+      işlevlerini sunmak için kullanılır. Buna kategori bazında e-posta sayma ve
+      listeleme, seçtiğiniz e-postaları Gmail Çöp Kutusu'na taşıma ve abonelikten
+      çıkma bağlantılarını açma dahildir.
+    </li>
 
-<li>Smart Gallery e-postalarınızın gövdesini/içeriğini bilerek okumaz veya saklamaz. E-posta içeriği sunucularımıza yüklenmez.</li>
+    <li>
+      Smart Gallery tarafından erişilen Gmail verileri cihazınız üzerinde
+      yerel olarak işlenir. Gmail verilerinizi alan, depolayan, analiz eden veya
+      aktaran bir Smart Gallery sunucusu işletmiyoruz.
+    </li>
 
-<li>Gmail entegrasyonu için gerekli erişim ve yenileme tokenları cihaz üzerinde iOS Keychain kullanılarak saklanır. iOS Keychain, Apple'ın güvenli kimlik bilgisi saklama mekanizmasıdır.</li>
+    <li>
+      OAuth erişim ve yenileme tokenları cihazınızda iOS Keychain güvenli
+      depolama alanında saklanır. Bu kimlik bilgileri Smart Gallery sunucularına
+      gönderilmez ve üçüncü taraflarla paylaşılmaz.
+    </li>
 
-<li>OAuth tokenları işletim sisteminin erişim kontrolleri tarafından korunur ve Smart Gallery sunucularına gönderilmez veya sunucularımızda saklanmaz.</li>
+    <li>
+      Gmail <code>gmail.modify</code> iznini, E-posta Temizleyici özelliğinin
+      kullanıcı tarafından seçilen e-postaları Gmail Çöp Kutusu'na taşıyabilmesi
+      gerektiği için kullanıyoruz. Salt okunur bir Gmail izni bu kullanıcı
+      tarafından başlatılan işlemi gerçekleştirmek için yeterli değildir.
+      Smart Gallery bu izni e-posta göndermek, e-posta oluşturmak, Gmail
+      ayarlarını değiştirmek veya Gmail etiketlerini yönetmek için kullanmaz.
+    </li>
 
-<li>Gmail verileri yalnızca kullanıcının talep ettiği E-posta Temizleyici işlevini sağlamak için kullanılır. Buna mesajları listeleme ve sayma, mesaj bilgilerini görüntüleme, kullanıcının seçtiği mesajları Gmail Çöp Kutusu'na taşıma ve abonelikten çıkma bağlantılarını açma dahildir.</li>
+    <li>
+      Silinmek üzere seçtiğiniz e-postalar Smart Gallery tarafından kalıcı
+      olarak silinmez; Gmail'in Çöp Kutusu'na taşınır. Mesajların Çöp Kutusu'nda
+      tutulması ve kalıcı olarak silinmesi Google'ın geçerli Gmail politikalarına
+      tabidir.
+    </li>
 
-<li>Google kullanıcı verileri reklam, kişiselleştirilmiş reklam, kredi değerliliği, kredi verme veya başka ilgisiz amaçlar için kullanılmaz.</li>
+    <li>
+      Gmail kullanıcı verileri yalnızca E-posta Temizleyici özelliğini
+      sağlayabilmek için gerekli olduğu süre boyunca saklanır. Gmail hesabınızı
+      Smart Gallery'den ayırdığınızda, o hesaba ait cihazda saklanan OAuth
+      kimlik bilgileri silinir ve uygulama artık bu kayıtlı kimlik bilgileri
+      üzerinden hesabınıza erişemez.
+    </li>
 
-<li>Google kullanıcı verileri satılmaz, kiralanmaz veya üçüncü tarafların kendi amaçları için kullanılmak üzere paylaşılmaz.</li>
+    <li>
+      Smart Gallery'nin erişimini Google Hesabınızın izinler sayfasından da
+      istediğiniz zaman iptal edebilirsiniz. Erişim iptal edildikten sonra
+      Smart Gallery iptal edilen yetkilendirmeyi kullanamaz.
+    </li>
+  </ul>
 
-<li>Google kullanıcı verileri Gmail işleviyle ilgisiz analiz veya takip amacıyla kullanılmaz.</li>
-</ul>
-
-<div class="note">
-Smart Gallery'nin Gmail verilerini kullanması Google API Services User Data Policy ve Limited Use gerekliliklerine tabidir.
+  <div class="note">
+    Smart Gallery, Gmail kullanıcı verilerini Google API Services User Data
+    Policy ve Limited Use gereklilikleri dahil olmak üzere Google'ın ilgili
+    politikalarına uygun şekilde işler.
+  </div>
 </div>
-</div>
-
 
 <div class="section">
 <h2 class="section-title">5. Google Kullanıcı Verilerinin Korunması, Saklanması ve Silinmesi</h2>
