@@ -315,35 +315,76 @@ Face detection and grouping are performed entirely on your device. Face data and
 
 
 <div class="section">
-<h2 class="section-title">4. Gmail Integration (Email Cleaner)</h2>
+  <h2 class="section-title">4. Gmail Integration (Email Cleaner)</h2>
 
-<p class="section-body">
-Smart Gallery offers an optional "Email Cleaner" feature. Gmail access is activated only when you explicitly connect a Google account through Google's official OAuth authentication system.
+  <p class="section-body">
+    The app offers an optional "Email Cleaner" feature. This feature is activated
+    only when you explicitly choose to connect a Gmail account. Authentication is
+    performed through Google's official OAuth authentication system. We never see,
+    collect, or store your Gmail password.
+  </p>
 
-Smart Gallery does not receive or store your Google password.
-</p>
+  <ul class="bullet-list">
+    <li>
+      We access the connected account's email address, message metadata such as
+      sender, subject, date, and Gmail category labels (including Social,
+      Promotions, Updates, and Forums). We do not intentionally read or process
+      the body/content of your emails.
+    </li>
 
-<ul class="bullet-list">
-<li>We access the connected Google account's email address, message headers such as sender, subject, and date, and Gmail category information such as Social, Promotions, Updates, and Forums.</li>
+    <li>
+      Gmail data is used only to provide the Email Cleaner functionality you
+      explicitly request, including counting and listing emails by category,
+      moving emails you select to Gmail's Trash, and opening unsubscribe links.
+    </li>
 
-<li>Smart Gallery does not intentionally read or store the body/content of your emails. Email content is not uploaded to our servers.</li>
+    <li>
+      The Gmail data accessed by Smart Gallery is processed locally on your
+      device. We do not operate a server that receives, stores, analyzes, or
+      transfers your Gmail data.
+    </li>
 
-<li>The Gmail access and refresh tokens required for the integration are stored locally on the user's device using iOS Keychain, Apple's secure credential storage mechanism.</li>
+    <li>
+      OAuth access and refresh tokens are stored locally on your device using
+      iOS Keychain secure storage. These credentials are not transmitted to
+      Smart Gallery servers or shared with third parties.
+    </li>
 
-<li>OAuth tokens are protected by the operating system's access controls and are not transmitted to or stored on Smart Gallery servers.</li>
+    <li>
+      We request the Gmail <code>gmail.modify</code> permission because the
+      Email Cleaner feature must be able to move emails selected by the user
+      to Gmail's Trash. A more limited read-only Gmail permission would not
+      allow this user-initiated action. Smart Gallery does not use this
+      permission to send emails, compose emails, modify Gmail settings, or
+      manage Gmail labels.
+    </li>
 
-<li>Gmail data is used only to provide the Email Cleaner functionality requested by the user, including listing and counting messages, displaying message information, moving messages selected by the user to Gmail Trash, and opening unsubscribe links.</li>
+    <li>
+      Emails selected for deletion are moved to Gmail's Trash rather than
+      being permanently deleted by Smart Gallery. Gmail controls the retention
+      and permanent deletion of messages in Trash according to Google's
+      applicable Gmail policies.
+    </li>
 
-<li>Smart Gallery does not use Google user data for advertising, personalized advertising, creditworthiness, lending, or other unrelated purposes.</li>
+    <li>
+      Gmail user data is retained only for as long as it is necessary to
+      provide the Email Cleaner feature. When you disconnect your Gmail
+      account from Smart Gallery, the locally stored OAuth credentials for
+      that account are deleted from the device and the app no longer has
+      access to that account through the stored credentials.
+    </li>
 
-<li>Google user data is not sold, rented, or shared with third parties for their own purposes.</li>
+    <li>
+      You may also revoke Smart Gallery's access at any time through your
+      Google Account permissions page. After access is revoked, Smart Gallery
+      can no longer use the revoked authorization.
+    </li>
+  </ul>
 
-<li>We do not use Google user data for analytics or tracking unrelated to the Gmail functionality.</li>
-</ul>
-
-<div class="note">
-Smart Gallery's use of Gmail data is subject to the Google API Services User Data Policy and its Limited Use requirements.
-</div>
+  <div class="note">
+    Smart Gallery handles Gmail user data in accordance with Google's API
+    Services User Data Policy, including the Limited Use requirements.
+  </div>
 </div>
 
 
