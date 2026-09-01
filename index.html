@@ -1,265 +1,975 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Smart Gallery</title>
-  <meta name="description" content="Smart Gallery helps users organize their photo library and Gmail inbox by removing duplicate photos, finding blurry images, and managing subscription emails." />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>Smart Gallery: Photo Cleaner</title>
+
+  <meta
+    name="description"
+    content="Smart Gallery is an iOS photo cleaner that helps you find duplicate photos, blurry images, screenshots and large videos to organize your photo library and free up storage."
+  />
+
+  <meta
+    name="keywords"
+    content="Smart Gallery, Photo Cleaner, iPhone Photo Cleaner, Duplicate Photos, Blurry Photos, Storage Cleaner, Photo Organizer, iOS"
+  />
+
+  <meta name="author" content="Smart Gallery" />
+
+  <meta name="robots" content="index, follow" />
+
+  <meta name="theme-color" content="#7c3aed" />
+
+  <link
+    rel="canonical"
+    href="https://smartgalleryphoto.com/"
+  />
+
+  <!-- Open Graph -->
+  <meta
+    property="og:title"
+    content="Smart Gallery: Photo Cleaner"
+  />
+
+  <meta
+    property="og:description"
+    content="Clean and organize your iPhone photo library. Find duplicate photos, blurry images, screenshots and large videos with Smart Gallery."
+  />
+
+  <meta
+    property="og:url"
+    content="https://smartgalleryphoto.com/"
+  />
+
+  <meta
+    property="og:type"
+    content="website"
+  />
+
+  <meta
+    property="og:site_name"
+    content="Smart Gallery"
+  />
+
+  <!-- Twitter -->
+  <meta
+    name="twitter:card"
+    content="summary"
+  />
+
+  <meta
+    name="twitter:title"
+    content="Smart Gallery: Photo Cleaner"
+  />
+
+  <meta
+    name="twitter:description"
+    content="Organize your photo library, remove unnecessary photos and free up storage on your iPhone."
+  />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Smart Gallery: Photo Cleaner",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "iOS",
+    "url": "https://smartgalleryphoto.com/",
+    "downloadUrl": "https://apps.apple.com/us/app/smart-gallery-photo-cleaner/id6783930004",
+    "description": "Smart Gallery helps users organize their photo library by finding duplicate photos, blurry images, screenshots and large videos.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Smart Gallery",
+      "url": "https://smartgalleryphoto.com/"
+    }
+  }
+  </script>
+
   <style>
     :root {
-      --bg: #f8fafc;
+      --bg: #f8f7fc;
       --card: #ffffff;
-      --text: #111827;
-      --muted: #6b7280;
+      --text: #17131f;
+      --muted: #6f6878;
+
       --accent: #7c3aed;
-      --border: #e5e7eb;
+      --accent-dark: #6d28d9;
+      --accent-light: #f3e8ff;
+
+      --border: #e8e3ef;
+
+      --shadow:
+        0 10px 35px rgba(55, 34, 82, 0.07);
     }
 
-* { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  line-height: 1.7;
-}
+    html {
+      scroll-behavior: smooth;
+    }
 
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 56px 24px;
-}
+    body {
+      margin: 0;
 
-.hero {
-  text-align: center;
-  margin-bottom: 48px;
-}
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
 
-.logo {
-  width: 96px;
-  height: 96px;
-  border-radius: 24px;
-  margin: 0 auto 24px;
-  background: linear-gradient(135deg, #7c3aed, #a78bfa);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 40px;
-  font-weight: 700;
-}
+      background:
+        radial-gradient(
+          circle at top,
+          #f4edff 0,
+          var(--bg) 34%,
+          var(--bg) 100%
+        );
 
-h1 {
-  font-size: 46px;
-  margin-bottom: 16px;
-  letter-spacing: -0.5px;
-}
+      color: var(--text);
 
-.subtitle {
-  font-size: 20px;
-  color: var(--muted);
-  max-width: 760px;
-  margin: 0 auto;
-}
+      line-height: 1.7;
 
-.card {
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: 18px;
-  padding: 32px;
-  margin: 32px 0;
-}
+      -webkit-font-smoothing: antialiased;
+    }
 
-h2 {
-  margin-top: 0;
-  color: var(--text);
-  font-size: 30px;
-}
+    a {
+      color: inherit;
+    }
 
-.highlight {
-  background: #f3e8ff;
-  border-left: 4px solid var(--accent);
-  padding: 18px;
-  border-radius: 12px;
-  margin: 24px 0;
-}
+    .container {
+      width: 100%;
+      max-width: 1080px;
 
-.features {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 18px;
-  margin-top: 24px;
-}
+      margin: 0 auto;
 
-.feature {
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  padding: 20px;
-  background: #fafafa;
-}
+      padding:
+        64px
+        24px
+        40px;
+    }
 
-.feature h3 {
-  margin-top: 0;
-  color: var(--accent);
-  font-size: 18px;
-}
+    /* =========================================================
+       HERO
+       ========================================================= */
 
-.feature p {
-  margin: 0;
-  color: var(--muted);
-}
+    .hero {
+      text-align: center;
 
-.button {
-  display: inline-block;
-  background: var(--accent);
-  color: white;
-  text-decoration: none;
-  padding: 14px 24px;
-  border-radius: 14px;
-  font-weight: 600;
-  margin-top: 28px;
-}
+      max-width: 850px;
 
-.button:hover {
-  background: #6d28d9;
-}
+      margin:
+        0 auto
+        64px;
+    }
 
-.links {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-top: 24px;
-}
+    .logo {
+      width: 104px;
+      height: 104px;
 
-.links a {
-  color: var(--accent);
-  text-decoration: none;
-  font-weight: 500;
-}
+      margin:
+        0 auto
+        24px;
 
-.links a:hover {
-  text-decoration: underline;
-}
+      display: flex;
 
-footer {
-  margin-top: 64px;
-  padding-top: 24px;
-  border-top: 1px solid var(--border);
-  text-align: center;
-  color: var(--muted);
-  font-size: 14px;
-}
+      align-items: center;
+      justify-content: center;
 
-@media (max-width: 640px) {
-  h1 { font-size: 36px; }
-  .subtitle { font-size: 18px; }
-  .container { padding: 40px 20px; }
-}
+      border-radius: 28px;
 
+      background:
+        linear-gradient(
+          135deg,
+          #6d28d9,
+          #8b5cf6,
+          #a78bfa
+        );
+
+      color: #ffffff;
+
+      font-size: 40px;
+      font-weight: 800;
+
+      letter-spacing: -1px;
+
+      box-shadow:
+        0 16px 40px
+        rgba(124, 58, 237, 0.25);
+    }
+
+    .eyebrow {
+      display: inline-block;
+
+      margin-bottom: 14px;
+
+      padding:
+        6px
+        14px;
+
+      border-radius: 999px;
+
+      background:
+        var(--accent-light);
+
+      color:
+        var(--accent-dark);
+
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    h1 {
+      margin:
+        0
+        0
+        20px;
+
+      font-size:
+        clamp(
+          40px,
+          7vw,
+          60px
+        );
+
+      line-height: 1.05;
+
+      letter-spacing:
+        -2px;
+    }
+
+    .subtitle {
+      max-width: 760px;
+
+      margin:
+        0 auto;
+
+      color:
+        var(--muted);
+
+      font-size: 20px;
+    }
+
+    .hero-actions {
+      margin-top: 30px;
+
+      display: flex;
+
+      align-items: center;
+      justify-content: center;
+
+      gap: 14px;
+
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-flex;
+
+      align-items: center;
+      justify-content: center;
+
+      min-height: 52px;
+
+      padding:
+        13px
+        24px;
+
+      border-radius: 14px;
+
+      background:
+        var(--accent);
+
+      color: #ffffff;
+
+      text-decoration: none;
+
+      font-weight: 700;
+
+      transition:
+        transform 0.15s ease,
+        background 0.15s ease,
+        box-shadow 0.15s ease;
+    }
+
+    .button:hover {
+      background:
+        var(--accent-dark);
+
+      transform:
+        translateY(-1px);
+
+      box-shadow:
+        0 10px 25px
+        rgba(124, 58, 237, 0.22);
+    }
+
+    .button.secondary {
+      background:
+        #ffffff;
+
+      color:
+        var(--accent-dark);
+
+      border:
+        1px solid var(--border);
+    }
+
+    .button.secondary:hover {
+      background:
+        #faf7ff;
+    }
+
+    /* =========================================================
+       CARDS
+       ========================================================= */
+
+    .card {
+      margin:
+        28px
+        0;
+
+      padding:
+        36px;
+
+      background:
+        var(--card);
+
+      border:
+        1px solid var(--border);
+
+      border-radius:
+        22px;
+
+      box-shadow:
+        var(--shadow);
+    }
+
+    h2 {
+      margin:
+        0
+        0
+        14px;
+
+      font-size:
+        30px;
+
+      line-height:
+        1.25;
+
+      letter-spacing:
+        -0.5px;
+    }
+
+    .section-description {
+      margin:
+        0;
+
+      color:
+        var(--muted);
+    }
+
+    /* =========================================================
+       FEATURES
+       ========================================================= */
+
+    .features {
+      display: grid;
+
+      grid-template-columns:
+        repeat(
+          auto-fit,
+          minmax(240px, 1fr)
+        );
+
+      gap: 18px;
+
+      margin-top: 28px;
+    }
+
+    .feature {
+      padding: 22px;
+
+      background:
+        #fcfbfe;
+
+      border:
+        1px solid var(--border);
+
+      border-radius:
+        18px;
+    }
+
+    .feature-icon {
+      width: 42px;
+      height: 42px;
+
+      margin-bottom:
+        14px;
+
+      display:
+        flex;
+
+      align-items:
+        center;
+
+      justify-content:
+        center;
+
+      border-radius:
+        12px;
+
+      background:
+        var(--accent-light);
+
+      color:
+        var(--accent-dark);
+
+      font-size:
+        21px;
+    }
+
+    .feature h3 {
+      margin:
+        0
+        0
+        8px;
+
+      color:
+        var(--text);
+
+      font-size:
+        18px;
+    }
+
+    .feature p {
+      margin:
+        0;
+
+      color:
+        var(--muted);
+
+      font-size:
+        15px;
+    }
+
+    /* =========================================================
+       HIGHLIGHT
+       ========================================================= */
+
+    .highlight {
+      margin-top:
+        26px;
+
+      padding:
+        22px;
+
+      background:
+        var(--accent-light);
+
+      border:
+        1px solid #e6d5ff;
+
+      border-radius:
+        16px;
+    }
+
+    .highlight strong {
+      color:
+        var(--accent-dark);
+    }
+
+    /* =========================================================
+       PRIVACY
+       ========================================================= */
+
+    .privacy-list {
+      margin:
+        24px
+        0
+        0;
+
+      padding-left:
+        22px;
+    }
+
+    .privacy-list li {
+      margin:
+        8px
+        0;
+
+      color:
+        var(--muted);
+    }
+
+    /* =========================================================
+       LINKS
+       ========================================================= */
+
+    .links {
+      display:
+        flex;
+
+      flex-wrap:
+        wrap;
+
+      gap:
+        16px;
+
+      margin-top:
+        28px;
+    }
+
+    .links a {
+      color:
+        var(--accent);
+
+      text-decoration:
+        none;
+
+      font-weight:
+        600;
+    }
+
+    .links a:hover {
+      text-decoration:
+        underline;
+    }
+
+    .contact {
+      margin-top:
+        24px;
+
+      padding-top:
+        22px;
+
+      border-top:
+        1px solid var(--border);
+    }
+
+    .contact a {
+      color:
+        var(--accent);
+
+      text-decoration:
+        none;
+    }
+
+    .contact a:hover {
+      text-decoration:
+        underline;
+    }
+
+    /* =========================================================
+       FOOTER
+       ========================================================= */
+
+    footer {
+      margin-top:
+        60px;
+
+      padding:
+        28px
+        0
+        12px;
+
+      border-top:
+        1px solid var(--border);
+
+      color:
+        var(--muted);
+
+      text-align:
+        center;
+
+      font-size:
+        14px;
+    }
+
+    footer a {
+      color:
+        var(--accent);
+
+      text-decoration:
+        none;
+    }
+
+    footer a:hover {
+      text-decoration:
+        underline;
+    }
+
+    /* =========================================================
+       MOBILE
+       ========================================================= */
+
+    @media (max-width: 640px) {
+      .container {
+        padding:
+          42px
+          18px
+          30px;
+      }
+
+      .hero {
+        margin-bottom:
+          42px;
+      }
+
+      .logo {
+        width:
+          88px;
+
+        height:
+          88px;
+
+        border-radius:
+          23px;
+
+        font-size:
+          34px;
+      }
+
+      h1 {
+        letter-spacing:
+          -1.4px;
+      }
+
+      .subtitle {
+        font-size:
+          17px;
+      }
+
+      .card {
+        padding:
+          26px
+          22px;
+      }
+
+      h2 {
+        font-size:
+          26px;
+      }
+
+      .hero-actions {
+        flex-direction:
+          column;
+      }
+
+      .hero-actions .button {
+        width:
+          100%;
+      }
+    }
   </style>
 </head>
+
 <body>
-  <div class="container">
 
-<section class="hero">
-  <div class="logo">SG</div>
-  <h1>Smart Gallery</h1>
+  <main class="container">
 
-  <p class="subtitle">
-   Smart Gallery is a productivity application that helps users organize and clean their photo library and Gmail inbox. The app can detect duplicate and blurry photos, organize screenshots, identify subscription emails, help users unsubscribe from unwanted mailing lists, and reduce inbox clutter.
-  </p>
+    <!-- =======================================================
+         HERO
+         ======================================================= -->
 
-  <a class="button" href="https://apps.apple.com/us/app/smart-gallery-photo-cleaner/id6783930004" target="_blank" rel="noopener">
-    Download on the App Store
-  </a>
-</section>
+    <section class="hero">
 
-<section class="card">
-  <h2>Application purpose</h2>
+      <div class="logo">
+        SG
+      </div>
 
-  <p>
-    Smart Gallery is designed to help users organize and clean both their photo library and Gmail inbox.
-    The application analyzes photo and email content in order to identify unnecessary items and improve organization.
-  </p>
+      <span class="eyebrow">
+        Smart Gallery for iPhone
+      </span>
 
-  <div class="highlight">
-    <strong>Why Gmail access is required</strong><br><br>
-    Smart Gallery requests Gmail access only after the user explicitly signs in with Google and grants permission.
-    Gmail access is used exclusively to identify subscription emails, analyze Gmail categories,
-    help users unsubscribe from unwanted mailing lists, and move unwanted emails to the trash. Smart Gallery does not use Gmail data for advertising, marketing, or any purpose unrelated to the features requested by the user.
-  </div>
+      <h1>
+        Smart Gallery
+      </h1>
 
-  <p>
-    Gmail data is accessed solely to provide the inbox organization and subscription cleanup features requested by the user.
-  </p>
-</section>
+      <p class="subtitle">
+        A simple and powerful photo cleaner for iPhone.
+        Find unnecessary photos, organize your library,
+        compress large videos and free up valuable storage space.
+      </p>
 
-<section class="card">
-  <h2>Main features</h2>
+      <div class="hero-actions">
 
-  <div class="features">
-    <div class="feature">
-      <h3>Duplicate photo detection</h3>
-      <p>Find and remove duplicate photos quickly and safely.</p>
-    </div>
+        <a
+          class="button"
+          href="https://apps.apple.com/us/app/smart-gallery-photo-cleaner/id6783930004"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Download on the App Store
+        </a>
 
-    <div class="feature">
-      <h3>Blurry photo cleanup</h3>
-      <p>Identify low-quality images that can be deleted.</p>
-    </div>
+        <a
+          class="button secondary"
+          href="#features"
+        >
+          Explore Features
+        </a>
 
-    <div class="feature">
-      <h3>Screenshot organization</h3>
-      <p>Organize screenshots and similar images automatically.</p>
-    </div>
+      </div>
 
-    <div class="feature">
-      <h3>Gmail subscription management</h3>
-      <p>Find newsletters and unsubscribe from unwanted mailing lists.</p>
-    </div>
+    </section>
 
-    <div class="feature">
-      <h3>Inbox cleanup</h3>
-      <p>Move unwanted emails to the trash and reduce inbox clutter.</p>
-    </div>
+    <!-- =======================================================
+         ABOUT
+         ======================================================= -->
 
-    <div class="feature">
-      <h3>Storage optimization</h3>
-      <p>Free up device storage by removing unnecessary photos and emails.</p>
-    </div>
-  </div>
-</section>
+    <section class="card">
 
-<section class="card">
-  <h2>Privacy and data use</h2>
+      <h2>
+        A cleaner photo library
+      </h2>
 
-  <p>
-    Smart Gallery is committed to protecting user privacy.
-  </p>
+      <p class="section-description">
+        Smart Gallery helps you review and organize your
+        iPhone photo library more efficiently.
+        Instead of manually searching through thousands of photos,
+        Smart Gallery helps identify content that may no longer
+        be useful.
+      </p>
 
-  <ul>
-    <li>Google sign-in is required before Gmail data can be accessed.</li>
-    <li>Gmail access is limited to the permissions granted by the user.</li>
-    <li>Gmail data is used only to provide inbox organization and subscription cleanup features.</li>
-    <li>Smart Gallery does not sell user data.</li>
-  </ul>
+      <div class="highlight">
+        <strong>Your photos stay under your control.</strong>
+        Smart Gallery is designed to help you review your library
+        and decide what you want to keep or remove.
+      </div>
 
-  <div class="links">
-    <a href="https://smartgalleryphoto.com/privacy">Privacy Policy</a>
-    <a href="https://smartgalleryphoto.com/terms">Terms of Service</a>
-  </div>
+    </section>
 
-  <p style="margin-top:24px;">
-    <strong>Contact:</strong>
-    <a href="mailto:serpiltopcu@gmail.com">smartgalleryphoto@gmail.com</a>
-  </p>
-</section>
+    <!-- =======================================================
+         FEATURES
+         ======================================================= -->
 
-<footer>
-  © 2026 Smart Gallery. All rights reserved.
-</footer>
-  </div>
+    <section
+      class="card"
+      id="features"
+    >
+
+      <h2>
+        Main features
+      </h2>
+
+      <p class="section-description">
+        Tools designed to make cleaning and organizing your
+        photo library easier.
+      </p>
+
+      <div class="features">
+
+        <div class="feature">
+
+          <div class="feature-icon">
+            ◫
+          </div>
+
+          <h3>
+            Duplicate photos
+          </h3>
+
+          <p>
+            Find duplicate and similar photos so you can
+            quickly review unnecessary copies.
+          </p>
+
+        </div>
+
+        <div class="feature">
+
+          <div class="feature-icon">
+            ◉
+          </div>
+
+          <h3>
+            Blurry photos
+          </h3>
+
+          <p>
+            Identify potentially blurry or low-quality
+            photos that you may want to remove.
+          </p>
+
+        </div>
+
+        <div class="feature">
+
+          <div class="feature-icon">
+            ▣
+          </div>
+
+          <h3>
+            Screenshots
+          </h3>
+
+          <p>
+            Review screenshots separately and clean up
+            temporary images more easily.
+          </p>
+
+        </div>
+
+        <div class="feature">
+
+          <div class="feature-icon">
+            ▶
+          </div>
+
+          <h3>
+            Video compression
+          </h3>
+
+          <p>
+            Reduce the size of large videos and recover
+            storage space while keeping your important content.
+          </p>
+
+        </div>
+
+        <div class="feature">
+
+          <div class="feature-icon">
+            ✦
+          </div>
+
+          <h3>
+            Smart organization
+          </h3>
+
+          <p>
+            Review different types of media through
+            simple categories designed for faster cleanup.
+          </p>
+
+        </div>
+
+        <div class="feature">
+
+          <div class="feature-icon">
+            ↓
+          </div>
+
+          <h3>
+            Save storage
+          </h3>
+
+          <p>
+            Remove unnecessary media and compress large
+            files to free up space on your device.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =======================================================
+         PRIVACY
+         ======================================================= -->
+
+    <section class="card">
+
+      <h2>
+        Privacy
+      </h2>
+
+      <p class="section-description">
+        Smart Gallery is built with user privacy in mind.
+      </p>
+
+      <ul class="privacy-list">
+
+        <li>
+          Access to your photo library requires your permission.
+        </li>
+
+        <li>
+          You remain in control of the photos and videos
+          you choose to delete.
+        </li>
+
+        <li>
+          Smart Gallery does not sell your personal data.
+        </li>
+
+        <li>
+          Permissions are used only to provide the
+          features available in the application.
+        </li>
+
+      </ul>
+
+      <div class="links">
+
+        <a
+          href="https://smartgalleryphoto.com/privacy"
+        >
+          Privacy Policy
+        </a>
+
+        <a
+          href="https://smartgalleryphoto.com/terms"
+        >
+          Terms of Service
+        </a>
+
+        <a
+          href="https://smartgalleryphoto.com/app-ads.txt"
+        >
+          app-ads.txt
+        </a>
+
+      </div>
+
+      <div class="contact">
+
+        <strong>
+          Contact
+        </strong>
+
+        <br />
+
+        <a
+          href="mailto:smartgalleryphoto@gmail.com"
+        >
+          smartgalleryphoto@gmail.com
+        </a>
+
+      </div>
+
+    </section>
+
+    <!-- =======================================================
+         FOOTER
+         ======================================================= -->
+
+    <footer>
+
+      <div>
+        © 2026 Smart Gallery. All rights reserved.
+      </div>
+
+      <div>
+        Available on the Apple App Store.
+      </div>
+
+    </footer>
+
+  </main>
+
 </body>
 </html>
