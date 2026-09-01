@@ -1,122 +1,551 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
   <title>Smart Gallery - Terms of Service</title>
+
+  <meta
+    name="description"
+    content="Terms of Service for Smart Gallery: Photo Cleaner."
+  />
+
+  <meta
+    name="robots"
+    content="index, follow"
+  />
+
+  <link
+    rel="canonical"
+    href="https://smartgalleryphoto.com/terms"
+  />
+
   <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-      background: #f8fafc;
-      color: #111827;
-      margin: 0;
-      padding: 40px 20px;
-      line-height: 1.7;
+    :root {
+      --bg: #f8f7fc;
+      --card: #ffffff;
+      --text: #17131f;
+      --muted: #625b6c;
+      --accent: #7c3aed;
+      --accent-dark: #6d28d9;
+      --border: #e8e3ef;
     }
 
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  background: white;
-  padding: 40px;
-  border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-}
+    * {
+      box-sizing: border-box;
+    }
 
-h1 {
-  color: #7c3aed;
-  margin-bottom: 8px;
-}
+    body {
+      margin: 0;
+      padding: 40px 20px;
 
-h2 {
-  margin-top: 32px;
-  color: #111827;
-}
+      background:
+        radial-gradient(
+          circle at top,
+          rgba(124, 58, 237, 0.08),
+          transparent 350px
+        ),
+        var(--bg);
 
-p {
-  color: #374151;
-}
+      color: var(--text);
 
-a {
-  color: #7c3aed;
-  text-decoration: none;
-}
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
 
-a:hover {
-  text-decoration: underline;
-}
+      line-height: 1.7;
 
-footer {
-  margin-top: 40px;
-  padding-top: 20px;
-  border-top: 1px solid #e5e7eb;
-  color: #6b7280;
-  font-size: 14px;
-}
+      -webkit-font-smoothing: antialiased;
+    }
 
-@media (max-width: 640px) {
-  .container {
-    padding: 28px;
-  }
-}
-```
+    .container {
+      width: 100%;
+      max-width: 800px;
 
+      margin: 0 auto;
+
+      padding: 42px;
+
+      background: var(--card);
+
+      border:
+        1px solid var(--border);
+
+      border-radius: 20px;
+
+      box-shadow:
+        0 10px 35px
+        rgba(55, 34, 82, 0.07);
+    }
+
+    .app-label {
+      margin-bottom: 8px;
+
+      color: var(--accent);
+
+      font-size: 13px;
+      font-weight: 700;
+
+      letter-spacing: 0.06em;
+
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin:
+        0
+        0
+        8px;
+
+      color: var(--text);
+
+      font-size:
+        clamp(
+          32px,
+          6vw,
+          44px
+        );
+
+      line-height: 1.1;
+
+      letter-spacing: -0.03em;
+    }
+
+    .effective-date {
+      margin-bottom: 30px;
+
+      color: var(--muted);
+
+      font-size: 14px;
+    }
+
+    h2 {
+      margin:
+        34px
+        0
+        10px;
+
+      color: var(--text);
+
+      font-size: 21px;
+
+      line-height: 1.3;
+    }
+
+    p {
+      margin:
+        0
+        0
+        16px;
+
+      color: var(--muted);
+    }
+
+    ul {
+      margin:
+        10px
+        0
+        18px;
+
+      padding-left:
+        22px;
+
+      color: var(--muted);
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    a {
+      color: var(--accent);
+
+      text-decoration: none;
+
+      font-weight: 500;
+    }
+
+    a:hover {
+      color: var(--accent-dark);
+      text-decoration: underline;
+    }
+
+    .note {
+      margin-top: 18px;
+
+      padding:
+        14px
+        16px;
+
+      border-left:
+        3px solid var(--accent);
+
+      border-radius:
+        0
+        8px
+        8px
+        0;
+
+      background: #f5f0ff;
+
+      color: var(--muted);
+
+      font-size: 14px;
+    }
+
+    footer {
+      margin-top: 44px;
+
+      padding-top: 22px;
+
+      border-top:
+        1px solid var(--border);
+
+      color: var(--muted);
+
+      font-size: 13px;
+    }
+
+    .footer-links {
+      display: flex;
+
+      gap: 16px;
+
+      flex-wrap: wrap;
+
+      margin-top: 8px;
+    }
+
+    @media (max-width: 640px) {
+      body {
+        padding:
+          20px
+          14px;
+      }
+
+      .container {
+        padding:
+          28px
+          22px;
+      }
+    }
   </style>
 </head>
+
 <body>
-  <div class="container">
-    <h1>Terms of Service</h1>
-    <p><strong>Effective date:</strong> August 2026</p>
 
-<p>
-  Welcome to Smart Gallery. By using the Smart Gallery application, you agree
-  to these Terms of Service.
-</p>
+  <main class="container">
 
-<h2>Use of the app</h2>
-<p>
-  Smart Gallery helps users organize their photo library, identify duplicate
-  and blurry photos, and manage media stored on their device.
-</p>
+    <div class="app-label">
+      Smart Gallery: Photo Cleaner
+    </div>
 
-<h2>User data</h2>
-<p>
-  Smart Gallery processes photos locally on your device. We do not upload your
-  photos to our servers. If you connect a Gmail account, access is limited to
-  the permissions you explicitly grant.
-</p>
+    <h1>
+      Terms of Service
+    </h1>
 
-<h2>Subscriptions</h2>
-<p>
-  Premium features are available through auto-renewable subscriptions managed
-  by Apple. Subscription billing, renewal, and cancellation are handled by
-  Apple in accordance with the Apple Media Services Terms.
-</p>
+    <p class="effective-date">
+      <strong>Effective date:</strong>
+      September 1, 2026
+    </p>
 
-<h2>Limitation of liability</h2>
-<p>
-  Smart Gallery is provided “as is” without warranties of any kind. We are not
-  liable for data loss, service interruptions, or damages arising from the use
-  of the application.
-</p>
+    <p>
+      Welcome to Smart Gallery.
+      By downloading, accessing, or using the Smart Gallery application,
+      you agree to these Terms of Service.
+      If you do not agree to these Terms, please do not use the application.
+    </p>
 
-<h2>Changes</h2>
-<p>
-  We may update these Terms from time to time. Continued use of the app
-  constitutes acceptance of the updated Terms.
-</p>
 
-<h2>Contact</h2>
-<p>
-  For questions regarding these Terms, contact:
-  <a href="mailto:serpiltopcu@gmail.com">smartgalleryphoto@gmail.com</a>
-</p>
+    <h2>
+      1. Use of the App
+    </h2>
 
-<footer>
-  © 2026 Smart Gallery. All rights reserved.
-</footer>
+    <p>
+      Smart Gallery is designed to help users organize and manage
+      photos and videos stored on their device.
+    </p>
 
-  </div>
+    <p>
+      Features may include identifying duplicate or similar photos,
+      detecting potentially blurry photos, organizing screenshots,
+      reviewing media, deleting selected items, and compressing videos.
+    </p>
+
+    <p>
+      You are responsible for reviewing the items you choose to delete
+      or modify before confirming an action.
+    </p>
+
+
+    <h2>
+      2. Photo Library Access
+    </h2>
+
+    <p>
+      Smart Gallery requires permission to access your photo library
+      in order to provide its photo and video management features.
+    </p>
+
+    <p>
+      Photo and video analysis used by Smart Gallery is generally
+      performed locally on your device.
+      Smart Gallery does not upload your personal photo or video files
+      to Smart Gallery servers for gallery analysis.
+    </p>
+
+
+    <h2>
+      3. Deleting and Modifying Content
+    </h2>
+
+    <p>
+      Certain features allow you to delete photos or videos,
+      or compress and otherwise process media stored on your device.
+    </p>
+
+    <p>
+      You are responsible for confirming that you no longer need
+      content before deleting or replacing it.
+      Smart Gallery is not responsible for content deleted,
+      modified, compressed, or otherwise changed as a result
+      of actions you confirm within the app.
+    </p>
+
+
+    <h2>
+      4. Premium Subscriptions
+    </h2>
+
+    <p>
+      Smart Gallery may offer optional Premium features through
+      auto-renewable subscriptions or other in-app purchases.
+    </p>
+
+    <p>
+      Payments are processed through Apple's App Store.
+      Smart Gallery does not directly collect or store your
+      payment card information.
+    </p>
+
+    <p>
+      Subscription status and Premium access may be managed
+      using RevenueCat.
+    </p>
+
+    <ul>
+      <li>
+        Subscriptions may automatically renew unless cancelled
+        according to Apple's subscription rules.
+      </li>
+
+      <li>
+        Billing and cancellation are managed through your
+        Apple ID and App Store subscription settings.
+      </li>
+
+      <li>
+        Pricing and subscription terms are displayed
+        before purchase.
+      </li>
+    </ul>
+
+
+    <h2>
+      5. Advertising and Rewarded Ads
+    </h2>
+
+    <p>
+      Smart Gallery may display advertisements using Google AdMob.
+    </p>
+
+    <p>
+      Some features may allow users to watch rewarded advertisements
+      in exchange for limited in-app benefits, credits, or access
+      to certain functionality.
+    </p>
+
+    <p>
+      Availability and value of advertising rewards may change
+      over time.
+      Advertising services may also be unavailable in certain
+      regions or circumstances.
+    </p>
+
+
+    <h2>
+      6. Third-Party Services
+    </h2>
+
+    <p>
+      Smart Gallery may rely on third-party services
+      including Apple App Store, RevenueCat,
+      Google AdMob, Firebase, and Sentry.
+    </p>
+
+    <p>
+      These third-party services operate according to
+      their own terms and privacy policies.
+    </p>
+
+
+    <h2>
+      7. Availability of the Service
+    </h2>
+
+    <p>
+      We aim to keep Smart Gallery available and functioning properly,
+      but we do not guarantee that the application or every feature
+      will always be available, uninterrupted, or error-free.
+    </p>
+
+    <p>
+      Features may be modified, added, restricted,
+      suspended, or removed as the application evolves.
+    </p>
+
+
+    <h2>
+      8. Acceptable Use
+    </h2>
+
+    <p>
+      You agree not to misuse Smart Gallery,
+      attempt to interfere with its operation,
+      reverse engineer the application where prohibited by law,
+      or use the application for unlawful purposes.
+    </p>
+
+
+    <h2>
+      9. Intellectual Property
+    </h2>
+
+    <p>
+      Smart Gallery, including its design, branding,
+      software, interface, and related content,
+      is protected by applicable intellectual property laws.
+    </p>
+
+    <p>
+      These Terms do not grant you ownership of
+      Smart Gallery or its intellectual property.
+    </p>
+
+
+    <h2>
+      10. Limitation of Liability
+    </h2>
+
+    <p>
+      Smart Gallery is provided on an "as is"
+      and "as available" basis to the extent permitted by law.
+    </p>
+
+    <p>
+      We do not guarantee that the app will be error-free
+      or suitable for every particular purpose.
+    </p>
+
+    <p>
+      To the maximum extent permitted by applicable law,
+      Smart Gallery and its developer will not be liable
+      for indirect, incidental, special, consequential,
+      or similar damages resulting from the use of
+      or inability to use the application.
+    </p>
+
+    <p>
+      Nothing in these Terms excludes rights or protections
+      that cannot legally be excluded under applicable law.
+    </p>
+
+
+    <h2>
+      11. Privacy
+    </h2>
+
+    <p>
+      Your use of Smart Gallery is also subject to
+      our Privacy Policy.
+    </p>
+
+    <p>
+      You can review the Privacy Policy at:
+      <a href="https://smartgalleryphoto.com/privacy">
+        smartgalleryphoto.com/privacy
+      </a>
+    </p>
+
+
+    <h2>
+      12. Changes to These Terms
+    </h2>
+
+    <p>
+      We may update these Terms from time to time
+      to reflect changes to the application,
+      legal requirements, or our services.
+    </p>
+
+    <p>
+      Updated Terms will be published on this page.
+      Continued use of the application after an update
+      constitutes acceptance of the revised Terms
+      to the extent permitted by applicable law.
+    </p>
+
+
+    <h2>
+      13. Contact
+    </h2>
+
+    <p>
+      If you have questions about these Terms,
+      please contact:
+    </p>
+
+    <p>
+      <a href="mailto:smartgalleryphoto@gmail.com">
+        smartgalleryphoto@gmail.com
+      </a>
+    </p>
+
+
+    <footer>
+
+      <div>
+        © 2026 Smart Gallery. All rights reserved.
+      </div>
+
+      <div class="footer-links">
+
+        <a href="https://smartgalleryphoto.com/">
+          Home
+        </a>
+
+        <a href="https://smartgalleryphoto.com/privacy">
+          Privacy Policy
+        </a>
+
+        <a href="https://smartgalleryphoto.com/app-ads.txt">
+          app-ads.txt
+        </a>
+
+      </div>
+
+    </footer>
+
+  </main>
+
 </body>
 </html>
