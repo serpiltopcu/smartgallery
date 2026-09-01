@@ -1,739 +1,1663 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Smart Gallery — Privacy Policy</title>
-<style>
-  :root {
-    --bg:#FFFFFF; --bg-card:#FFFFFF; --bg-note:#FFFFFF;
-    --text:#000000; --text-sub:#000000; --text-faint:#000000;
-    --accent:#7C3AED; --accent-lt:#A78BFA;
-    --border:#E4E0F0; --rule:#D6D0EC; --bullet-bg:#EDE9FA;
-  }
+  <meta charset="UTF-8">
 
-  @media (prefers-color-scheme: dark) {
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <title>Smart Gallery — Privacy Policy</title>
+
+  <meta
+    name="description"
+    content="Privacy Policy for Smart Gallery: Photo Cleaner."
+  >
+
+  <meta
+    name="robots"
+    content="index, follow"
+  >
+
+  <link
+    rel="canonical"
+    href="https://smartgalleryphoto.com/privacy"
+  >
+
+  <style>
     :root {
-      --bg:#0D0B14; --bg-card:#15121F; --bg-note:#1C1730;
-      --text:#EBE7FF; --text-sub:#9490A8; --text-faint:#5A5570;
-      --accent:#A78BFA; --accent-lt:#C4B5FD;
-      --border:#2A2440; --rule:#342D55; --bullet-bg:#221D38;
+      --bg: #f8f7fc;
+      --bg-card: #ffffff;
+      --bg-note: #f5f0ff;
+
+      --text: #17131f;
+      --text-sub: #5f5868;
+      --text-faint: #81798c;
+
+      --accent: #7c3aed;
+      --accent-lt: #a78bfa;
+
+      --border: #e8e3ef;
+      --rule: #ddd6e8;
+
+      --shadow:
+        0 10px 35px rgba(55, 34, 82, 0.06);
     }
-  }
 
-  :root[data-theme="dark"] {
-    --bg:#0D0B14; --bg-card:#15121F; --bg-note:#1C1730;
-    --text:#EBE7FF; --text-sub:#9490A8; --text-faint:#5A5570;
-    --accent:#A78BFA; --accent-lt:#C4B5FD;
-    --border:#2A2440; --rule:#342D55; --bullet-bg:#221D38;
-  }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0d0b14;
+        --bg-card: #15121f;
+        --bg-note: #1c1730;
 
-  :root[data-theme="light"] {
-    --bg:#ffffff; --bg-card:#FFFFFF; --bg-note:#F0EDFB;
-    --text:#000000; --text-sub:#000000; --text-faint:#000000;
-    --accent:#7C3AED; --accent-lt:#A78BFA;
-    --border:#E4E0F0; --rule:#D6D0EC; --bullet-bg:#EDE9FA;
-  }
+        --text: #ebe7ff;
+        --text-sub: #b7b1c7;
+        --text-faint: #8b849e;
 
-  *, *::before, *::after {
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
-  }
+        --accent: #a78bfa;
+        --accent-lt: #c4b5fd;
 
-  body {
-    background:var(--bg);
-    color:var(--text);
-    font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;
-    font-size:16px;
-    line-height:1.7;
-    -webkit-font-smoothing:antialiased;
-    padding:0 20px 80px;
-  }
+        --border: #2a2440;
+        --rule: #342d55;
 
-  .wrap {
-    max-width:680px;
-    margin:0 auto;
-  }
+        --shadow: none;
+      }
+    }
 
-  .site-header {
-    padding:40px 0 32px;
-    border-bottom:1px solid var(--border);
-    margin-bottom:36px;
-  }
+    :root[data-theme="dark"] {
+      --bg: #0d0b14;
+      --bg-card: #15121f;
+      --bg-note: #1c1730;
 
-  .app-name {
-    display:flex;
-    align-items:center;
-    gap:10px;
-    margin-bottom:6px;
-  }
+      --text: #ebe7ff;
+      --text-sub: #b7b1c7;
+      --text-faint: #8b849e;
 
-  .app-icon {
-    width:36px;
-    height:36px;
-    border-radius:9px;
-    background:var(--accent);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:18px;
-    flex-shrink:0;
-  }
+      --accent: #a78bfa;
+      --accent-lt: #c4b5fd;
 
-  .app-label {
-    font-size:13px;
-    font-weight:600;
-    letter-spacing:.06em;
-    text-transform:uppercase;
-    color:var(--text-faint);
-  }
+      --border: #2a2440;
+      --rule: #342d55;
 
-  .page-title {
-    font-size:clamp(24px,5vw,32px);
-    font-weight:700;
-    letter-spacing:-.02em;
-    color:var(--text);
-    line-height:1.2;
-    text-wrap:balance;
-    margin-bottom:16px;
-  }
+      --shadow: none;
+    }
 
-  .header-meta {
-    display:flex;
-    align-items:center;
-    gap:12px;
-    flex-wrap:wrap;
-  }
+    :root[data-theme="light"] {
+      --bg: #f8f7fc;
+      --bg-card: #ffffff;
+      --bg-note: #f5f0ff;
 
-  .updated-chip {
-    display:inline-flex;
-    align-items:center;
-    gap:6px;
-    font-size:12px;
-    color:var(--text-faint);
-    background:var(--bg-note);
-    border:1px solid var(--border);
-    border-radius:20px;
-    padding:4px 12px;
-    font-weight:500;
-  }
+      --text: #17131f;
+      --text-sub: #5f5868;
+      --text-faint: #81798c;
 
-  .lang-toggle {
-    display:inline-flex;
-    border:1px solid var(--border);
-    border-radius:8px;
-    overflow:hidden;
-    background:var(--bg-card);
-  }
+      --accent: #7c3aed;
+      --accent-lt: #a78bfa;
 
-  .lang-btn {
-    padding:6px 16px;
-    font-size:13px;
-    font-weight:600;
-    cursor:pointer;
-    border:none;
-    background:transparent;
-    color:var(--text-sub);
-    transition:background .15s,color .15s;
-    letter-spacing:.03em;
-  }
+      --border: #e8e3ef;
+      --rule: #ddd6e8;
 
-  .lang-btn:focus-visible {
-    outline:2px solid var(--accent);
-    outline-offset:-2px;
-  }
+      --shadow:
+        0 10px 35px rgba(55, 34, 82, 0.06);
+    }
 
-  .lang-btn.active {
-    background:var(--accent);
-    color:#fff;
-  }
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-  .policy-content { display:none; }
-  .policy-content.visible { display:block; }
+    html {
+      scroll-behavior: smooth;
+    }
 
-  .section {
-    padding:28px 0;
-    border-bottom:1px solid var(--border);
-  }
+    body {
+      min-height: 100vh;
 
-  .section:last-child { border-bottom:none; }
+      padding:
+        0
+        20px
+        80px;
 
-  .section-title {
-    font-size:15px;
-    font-weight:700;
-    color:var(--accent);
-    letter-spacing:.01em;
-    margin-bottom:10px;
-    display:flex;
-    align-items:baseline;
-    gap:8px;
-  }
+      background:
+        radial-gradient(
+          circle at top,
+          rgba(124, 58, 237, 0.08),
+          transparent 380px
+        ),
+        var(--bg);
 
-  .section-body {
-    font-size:15px;
-    color:var(--text-sub);
-    line-height:1.75;
-    white-space:pre-line;
-  }
+      color: var(--text);
 
-  .section-body + .bullet-list { margin-top:14px; }
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
 
-  .bullet-list {
-    list-style:none;
-    display:flex;
-    flex-direction:column;
-    gap:8px;
-    margin-top:12px;
-  }
+      font-size: 16px;
+      line-height: 1.7;
 
-  .bullet-list li {
-    display:flex;
-    align-items:flex-start;
-    gap:10px;
-    font-size:14px;
-    color:var(--text-sub);
-    line-height:1.6;
-  }
+      -webkit-font-smoothing: antialiased;
+    }
 
-  .bullet-list li::before {
-    content:'';
-    width:6px;
-    height:6px;
-    border-radius:50%;
-    background:var(--accent-lt);
-    flex-shrink:0;
-    margin-top:7px;
-  }
+    a {
+      color: var(--accent);
+    }
 
-  .note {
-    margin-top:14px;
-    padding:12px 16px;
-    background:var(--bg-note);
-    border-left:3px solid var(--accent);
-    border-radius:0 6px 6px 0;
-    font-size:13px;
-    color:var(--text-faint);
-    font-style:italic;
-  }
+    code {
+      font-family:
+        ui-monospace,
+        SFMono-Regular,
+        Menlo,
+        Monaco,
+        Consolas,
+        monospace;
 
-  .site-footer {
-    margin-top:48px;
-    padding-top:24px;
-    border-top:1px solid var(--border);
-    font-size:12px;
-    color:var(--text-faint);
-    text-align:center;
-    line-height:1.6;
-  }
+      font-size: 0.92em;
+    }
 
-  @media (max-width:480px) {
-    .site-header { padding:28px 0 24px; }
-    .section { padding:22px 0; }
-  }
+    .wrap {
+      width: 100%;
+      max-width: 760px;
 
-  @media print {
-    body { background:#fff; color:#000; }
-    .lang-toggle { display:none; }
-    .policy-content { display:block !important; }
-  }
-</style>
+      margin: 0 auto;
+    }
+
+    /* =========================================================
+       HEADER
+       ========================================================= */
+
+    .site-header {
+      margin-bottom: 28px;
+
+      padding:
+        48px
+        0
+        34px;
+
+      border-bottom:
+        1px solid var(--border);
+    }
+
+    .app-name {
+      display: flex;
+
+      align-items: center;
+
+      gap: 12px;
+
+      margin-bottom: 18px;
+    }
+
+    .app-icon {
+      width: 42px;
+      height: 42px;
+
+      display: flex;
+
+      align-items: center;
+      justify-content: center;
+
+      flex-shrink: 0;
+
+      border-radius: 12px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #6d28d9,
+          #8b5cf6,
+          #a78bfa
+        );
+
+      color: #ffffff;
+
+      font-size: 15px;
+      font-weight: 800;
+
+      letter-spacing: -0.5px;
+
+      box-shadow:
+        0 8px 24px
+        rgba(124, 58, 237, 0.22);
+    }
+
+    .app-label {
+      color: var(--text-faint);
+
+      font-size: 13px;
+      font-weight: 700;
+
+      letter-spacing: 0.07em;
+
+      text-transform: uppercase;
+    }
+
+    .page-title {
+      margin-bottom: 18px;
+
+      color: var(--text);
+
+      font-size:
+        clamp(
+          30px,
+          6vw,
+          42px
+        );
+
+      font-weight: 750;
+
+      letter-spacing:
+        -0.035em;
+
+      line-height: 1.1;
+    }
+
+    .header-description {
+      max-width: 640px;
+
+      margin-bottom: 20px;
+
+      color: var(--text-sub);
+
+      font-size: 15px;
+    }
+
+    .header-meta {
+      display: flex;
+
+      align-items: center;
+
+      gap: 12px;
+
+      flex-wrap: wrap;
+    }
+
+    .updated-chip {
+      display: inline-flex;
+
+      align-items: center;
+
+      gap: 6px;
+
+      padding:
+        5px
+        12px;
+
+      border:
+        1px solid var(--border);
+
+      border-radius: 999px;
+
+      background:
+        var(--bg-note);
+
+      color:
+        var(--text-faint);
+
+      font-size: 12px;
+      font-weight: 500;
+    }
+
+    .lang-toggle {
+      display: inline-flex;
+
+      overflow: hidden;
+
+      border:
+        1px solid var(--border);
+
+      border-radius: 9px;
+
+      background:
+        var(--bg-card);
+    }
+
+    .lang-btn {
+      padding:
+        7px
+        16px;
+
+      border: none;
+
+      background:
+        transparent;
+
+      color:
+        var(--text-sub);
+
+      cursor: pointer;
+
+      font-size: 13px;
+      font-weight: 700;
+
+      letter-spacing:
+        0.03em;
+
+      transition:
+        background 0.15s,
+        color 0.15s;
+    }
+
+    .lang-btn:hover {
+      background:
+        var(--bg-note);
+    }
+
+    .lang-btn:focus-visible {
+      outline:
+        2px solid var(--accent);
+
+      outline-offset:
+        -2px;
+    }
+
+    .lang-btn.active {
+      background:
+        var(--accent);
+
+      color:
+        #ffffff;
+    }
+
+    /* =========================================================
+       CONTENT
+       ========================================================= */
+
+    .policy-card {
+      overflow: hidden;
+
+      padding:
+        0
+        32px;
+
+      border:
+        1px solid var(--border);
+
+      border-radius:
+        22px;
+
+      background:
+        var(--bg-card);
+
+      box-shadow:
+        var(--shadow);
+    }
+
+    .policy-content {
+      display: none;
+    }
+
+    .policy-content.visible {
+      display: block;
+    }
+
+    .section {
+      padding:
+        30px
+        0;
+
+      border-bottom:
+        1px solid var(--border);
+    }
+
+    .section:last-child {
+      border-bottom: none;
+    }
+
+    .section-title {
+      display: flex;
+
+      align-items: baseline;
+
+      gap: 8px;
+
+      margin-bottom:
+        12px;
+
+      color:
+        var(--accent);
+
+      font-size:
+        16px;
+
+      font-weight:
+        750;
+
+      letter-spacing:
+        0.005em;
+    }
+
+    .section-body {
+      color:
+        var(--text-sub);
+
+      font-size:
+        15px;
+
+      line-height:
+        1.75;
+
+      white-space:
+        pre-line;
+    }
+
+    .section-body + .bullet-list {
+      margin-top:
+        16px;
+    }
+
+    .bullet-list {
+      display:
+        flex;
+
+      flex-direction:
+        column;
+
+      gap:
+        10px;
+
+      margin-top:
+        14px;
+
+      list-style:
+        none;
+    }
+
+    .bullet-list li {
+      position:
+        relative;
+
+      padding-left:
+        18px;
+
+      color:
+        var(--text-sub);
+
+      font-size:
+        14px;
+
+      line-height:
+        1.65;
+    }
+
+    .bullet-list li::before {
+      content:
+        "";
+
+      position:
+        absolute;
+
+      top:
+        9px;
+
+      left:
+        0;
+
+      width:
+        6px;
+
+      height:
+        6px;
+
+      border-radius:
+        50%;
+
+      background:
+        var(--accent-lt);
+    }
+
+    .note {
+      margin-top:
+        18px;
+
+      padding:
+        14px
+        17px;
+
+      border-left:
+        3px solid var(--accent);
+
+      border-radius:
+        0
+        8px
+        8px
+        0;
+
+      background:
+        var(--bg-note);
+
+      color:
+        var(--text-sub);
+
+      font-size:
+        13px;
+
+      line-height:
+        1.65;
+    }
+
+    .service-name {
+      color:
+        var(--text);
+
+      font-weight:
+        700;
+    }
+
+    .contact-link {
+      display:
+        inline-block;
+
+      margin-top:
+        8px;
+
+      color:
+        var(--accent);
+
+      text-decoration:
+        none;
+
+      font-weight:
+        600;
+    }
+
+    .contact-link:hover {
+      text-decoration:
+        underline;
+    }
+
+    /* =========================================================
+       FOOTER
+       ========================================================= */
+
+    .site-footer {
+      margin-top:
+        44px;
+
+      padding-top:
+        24px;
+
+      border-top:
+        1px solid var(--border);
+
+      color:
+        var(--text-faint);
+
+      text-align:
+        center;
+
+      font-size:
+        12px;
+
+      line-height:
+        1.7;
+    }
+
+    .footer-links {
+      display:
+        flex;
+
+      justify-content:
+        center;
+
+      gap:
+        16px;
+
+      flex-wrap:
+        wrap;
+
+      margin-top:
+        8px;
+    }
+
+    .footer-links a {
+      color:
+        var(--text-faint);
+
+      text-decoration:
+        none;
+    }
+
+    .footer-links a:hover {
+      color:
+        var(--accent);
+    }
+
+    /* =========================================================
+       MOBILE
+       ========================================================= */
+
+    @media (max-width: 600px) {
+      body {
+        padding:
+          0
+          16px
+          60px;
+      }
+
+      .site-header {
+        padding:
+          34px
+          0
+          26px;
+      }
+
+      .policy-card {
+        padding:
+          0
+          22px;
+
+        border-radius:
+          18px;
+      }
+
+      .section {
+        padding:
+          24px
+          0;
+      }
+
+      .header-meta {
+        align-items:
+          flex-start;
+      }
+    }
+
+    /* =========================================================
+       PRINT
+       ========================================================= */
+
+    @media print {
+      body {
+        background:
+          #ffffff;
+
+        color:
+          #000000;
+      }
+
+      .lang-toggle {
+        display:
+          none;
+      }
+
+      .policy-card {
+        border:
+          none;
+
+        box-shadow:
+          none;
+      }
+
+      .policy-content {
+        display:
+          block !important;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<div class="wrap">
+  <div class="wrap">
 
-<header class="site-header">
-  <div class="app-name">
-    <div class="app-icon">📷</div>
-    <span class="app-label">Smart Gallery</span>
+    <!-- =======================================================
+         HEADER
+         ======================================================= -->
+
+    <header class="site-header">
+
+      <div class="app-name">
+
+        <div
+          class="app-icon"
+          aria-hidden="true"
+        >
+          SG
+        </div>
+
+        <span class="app-label">
+          Smart Gallery: Photo Cleaner
+        </span>
+
+      </div>
+
+      <h1
+        class="page-title"
+        id="page-title"
+      >
+        Gizlilik Politikası
+      </h1>
+
+      <p
+        class="header-description"
+        id="header-description"
+      >
+        Smart Gallery'nin verilerinizi nasıl kullandığını ve
+        gizliliğinizi nasıl koruduğunu açıklayan politika.
+      </p>
+
+      <div class="header-meta">
+
+        <span class="updated-chip">
+
+          <svg
+            width="11"
+            height="11"
+            viewBox="0 0 12 12"
+            fill="none"
+            aria-hidden="true"
+          >
+            <circle
+              cx="6"
+              cy="6"
+              r="5"
+              stroke="currentColor"
+              stroke-width="1.4"
+            />
+
+            <path
+              d="M6 3.5V6l1.5 1.5"
+              stroke="currentColor"
+              stroke-width="1.4"
+              stroke-linecap="round"
+            />
+          </svg>
+
+          <span id="updated-label">
+            Son güncelleme: 1 Eylül 2026
+          </span>
+
+        </span>
+
+        <div
+          class="lang-toggle"
+          role="group"
+          aria-label="Language"
+        >
+
+          <button
+            class="lang-btn"
+            id="btn-en"
+            type="button"
+            onclick="setLang('en')"
+          >
+            EN
+          </button>
+
+          <button
+            class="lang-btn active"
+            id="btn-tr"
+            type="button"
+            onclick="setLang('tr')"
+          >
+            TR
+          </button>
+
+        </div>
+
+      </div>
+
+    </header>
+
+    <main class="policy-card">
+
+      <!-- =====================================================
+           ENGLISH
+           ===================================================== -->
+
+      <div
+        class="policy-content"
+        id="content-en"
+      >
+
+        <section class="section">
+
+          <h2 class="section-title">
+            1. Information We Collect
+          </h2>
+
+          <p class="section-body">
+Smart Gallery: Photo Cleaner is designed to minimize the collection of personal information.
+
+Photo and video analysis used for gallery-cleaning features is performed on your device. Smart Gallery does not upload your personal photo or video files to Smart Gallery servers.
+
+Certain third-party services used by the app may process limited technical, analytics, advertising, purchase, subscription, or diagnostic information as described in this Privacy Policy.
+          </p>
+
+        </section>
+
+
+        <section class="section">
+
+          <h2 class="section-title">
+            2. Photo Library Access
+          </h2>
+
+          <p class="section-body">
+Smart Gallery requires access to your photo library to provide features such as identifying duplicate or similar photos, detecting potentially blurry images, organizing screenshots, reviewing media, deleting selected items, and compressing videos.
+
+Photo and video processing for these features is performed on your device.
+
+Smart Gallery does not upload your personal photo or video files to Smart Gallery servers.
+          </p>
+
+          <ul class="bullet-list">
+
+            <li>
+              Photo library access requires your permission.
+            </li>
+
+            <li>
+              You choose which photos or videos you want to delete or process.
+            </li>
+
+            <li>
+              Smart Gallery does not sell your photo or video content.
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <section class="section">
+
+          <h2 class="section-title">
+            3. Face Detection and Grouping
+          </h2>
+
+          <p class="section-body">
+Smart Gallery may use on-device face detection to identify photos that contain faces and to provide photo organization features.
+
+Face detection and related processing are performed locally on your device.
+
+Smart Gallery does not upload face images, face templates, biometric identifiers, or biometric information to Smart Gallery servers.
+          </p>
+
+        </section>
+
+
+        <section class="section">
+
+          <h2 class="section-title">
+            4. Analytics
+          </h2>
+
+          <p class="section-body">
+Smart Gallery may use Firebase Analytics to understand how the application is used and to improve app performance and features.
+
+Analytics information may include general technical and usage information such as device type, operating system version, app version, country or approximate geographic information, app interactions, sessions, and feature usage.
+
+Analytics data is not intended to contain the contents of your personal photos or videos.
+          </p>
+
+          <div class="note">
+            Firebase services are provided by Google.
+            Google's applicable privacy policies govern
+            Google's processing of data through these services.
+          </div>
+
+        </section>
+
+
+        <section class="section">
+
+          <h2 class="section-title">
+            5. Advertising
+          </h2>
+
+          <p class="section-body">
+Smart Gallery uses Google AdMob to display advertisements, including banner advertisements and rewarded advertisements.
+
+AdMob may process advertising-related information such as device identifiers, IP address, general device information, advertising interactions, and other information required to deliver, measure, secure, and improve advertisements.
+
+The exact data processed by Google may depend on your device settings, region, consent choices, and applicable privacy laws.
+
+Smart Gallery does not provide your personal photo or video files to AdMob for advertising purposes.
+          </p>
+
+          <div class="note">
+            Advertising services are provided by Google AdMob.
+            Google's privacy and advertising policies apply to
+            Google's processing of advertising-related data.
+          </div>
+
+        </section>
+
+
+        <section class="section">
+
+          <h2 class="section-title">
+            6. Purchases and Subscriptions
+          </h2>
+
+          <p class="section-body">
+Smart Gallery offers optional Premium subscriptions and may offer other in-app purchase functionality.
+
+Purchases are processed through Apple's App Store.
+
+Smart Gallery does not directly collect or store your payment card information.
+
+Subscription and purchase entitlement information may be processed by Apple and RevenueCat in order to complete transactions and manage Premium access.
+          </p>
+
+          <ul class="bullet-list">
+
+            <li>
+              Apple processes App Store payments.
+            </li>
+
+            <li>
+              RevenueCat helps manage subscription status and entitlements.
+            </li>
+
+            <li>
+              RevenueCat may process purchase-related information such as subscription status, product identifier, purchase date, renewal status, and transaction information.
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <section class="section">
+
+          <h2 class="section-title">
+            7. Crash and Error Reporting
+          </h2>
+
+          <p class="section-body">
+Smart Gallery uses Sentry to help identify crashes, errors, and technical problems.
+
+Sentry may receive technical information related to errors, such as app version, operating system information, device information, crash details, stack traces, and diagnostic information.
+
+Smart Gallery does not intentionally send the contents of your personal photos or videos to Sentry.
+          </p>
+
+        </section>
+
+
+        <section class="section">
+
+          <h2 class="section-title">
+            8. Third-Party Services
+          </h2>
+
+          <p class="section-body">
+Smart Gallery currently uses third-party services including:
+          </p>
+
+          <ul class="bullet-list">
+
+            <li>
+              <span>
+                <span class="service-name">
+                  Apple App Store
+                </span>
+                — application distribution and payment processing.
+              </span>
+            </li>
+
+            <li>
+              <span>
+                <span class="service-name">
+                  RevenueCat
+                </span>
+                — subscription and entitlement management.
+              </span>
+            </li>
+
+            <li>
+              <span>
+                <span class="service-name">
+                  Google AdMob
+                </span>
+                — advertising and rewarded advertisements.
+              </span>
+            </li>
+
+            <li>
+              <span>
+                <span class="service-name">
+                  Firebase Analytics
+                </span>
+                — application analytics and usage measurement.
+              </span>
+            </li>
+
+            <li>
+              <span>
+                <span class="service-name">
+                  Sentry
+                </span>
+                — crash and error diagnostics.
+              </span>
+            </li>
+
+          </ul>
+
+          <p class="section-body">
+These services may process information according to their own privacy policies and applicable legal obligations.
+          </p>
+
+        </section>
+
+
+        <section class="section">
+
+          <h2 class="section-title">
+            9. Data Sharing
+          </h2>
+
+          <p class="section-body">
+Smart Gallery does not sell your personal photo or video content.
+
+Information may be processed by the third-party service providers described in this policy when necessary to provide advertising, analytics, subscriptions, purchases, crash reporting, and other application functionality.
+
+We may also disclose information when required by applicable law, regulation, legal process, or lawful governmental request.
+          </p>
+
+        </section>
+
+
+        <section class="section">
+
+          <h2 class="section-title">
+            10. Data Security
+          </h2>
+
+          <p class="section-body">
+We use reasonable technical and organizational measures designed to protect information handled through Smart Gallery.
+
+However, no electronic storage or transmission method can be guaranteed to be completely secure.
+          </p>
+
+        </section>
+
+
+        <section class="section">
+
+          <h2 class="section-title">
+            11. Data Retention
+          </h2>
+
+          <p class="section-body">
+Smart Gallery does not maintain a remote copy of your personal photo or video library.
+
+Information processed by third-party services may be retained according to the policies, legal requirements, and retention periods of those service providers.
+
+Subscription information may be retained as necessary to maintain purchase and subscription records.
+          </p>
+
+        </section>
+
+
+        <section class="section">
+
+          <h2 class="section-title">
+            12. Children's Privacy
+          </h2>
+
+          <p class="section-body">
+Smart Gallery is not directed to children under the age of 13.
+
+We do not knowingly collect personal information directly from children under 13.
+
+If you believe that a child has provided personal information through the application, please contact us.
+          </p>
+
+        </section>
+
+
+        <section class="section">
+
+          <h2 class="section-title">
+            13. Your Choices
+          </h2>
+
+          <p class="section-body">
+You can control certain permissions and privacy choices through your iOS device settings.
+
+Depending on your location and applicable law, you may also have rights regarding personal information processed about you.
+
+You may contact us if you have questions or requests regarding privacy.
+          </p>
+
+        </section>
+
+
+        <section class="section">
+
+          <h2 class="section-title">
+            14. Changes to This Privacy Policy
+          </h2>
+
+          <p class="section-body">
+We may update this Privacy Policy from time to time.
+
+When changes are made, the updated version will be published on this page and the "Last updated" date will be revised.
+          </p>
+
+        </section>
+
+
+        <section class="section">
+
+          <h2 class="section-title">
+            15. Contact
+          </h2>
+
+          <p class="section-body">
+If you have questions about this Privacy Policy or Smart Gallery's privacy practices, please contact us:
+          </p>
+
+          <a
+            class="contact-link"
+            href="mailto:smartgalleryphoto@gmail.com"
+          >
+            smartgalleryphoto@gmail.com
+          </a>
+
+        </section>
+
+      </div>
+
+
+      <!-- =====================================================
+           TURKISH
+           ===================================================== -->
+
+      <div
+        class="policy-content visible"
+        id="content-tr"
+      >
+
+        <section class="section">
+
+          <h2 class="section-title">
+            1. Topladığımız Bilgiler
+          </h2>
+
+          <p class="section-body">
+Smart Gallery: Photo Cleaner, kişisel veri toplanmasını mümkün olduğunca sınırlayacak şekilde tasarlanmıştır.
+
+Galeri temizleme özelliklerinde kullanılan fotoğraf ve video analizleri cihazınız üzerinde gerçekleştirilir. Smart Gallery, kişisel fotoğraf veya video dosyalarınızı Smart Gallery sunucularına yüklemez.
+
+Uygulamada kullanılan bazı üçüncü taraf hizmetler; bu Gizlilik Politikası'nda açıklandığı şekilde sınırlı teknik, analitik, reklam, satın alma, abonelik veya hata teşhis bilgilerini işleyebilir.
+          </p>
+
+        </section>
+
+
+        <section class="section">
+
+          <h2 class="section-title">
+            2. Fotoğraf Kütüphanesi Erişimi
+          </h2>
+
+          <p class="section-body">
+Smart Gallery; tekrar eden veya benzer fotoğrafları belirlemek, bulanık olabilecek fotoğrafları tespit etmek, ekran görüntülerini düzenlemek, medya dosyalarını incelemek, seçilen öğeleri silmek ve videoları sıkıştırmak gibi özellikleri sunabilmek için fotoğraf kütüphanenize erişim gerektirir.
+
+Bu özellikler için kullanılan fotoğraf ve video işlemleri cihazınız üzerinde gerçekleştirilir.
+
+Smart Gallery kişisel fotoğraf veya video dosyalarınızı Smart Gallery sunucularına yüklemez.
+          </p>
+
+          <ul class="bullet-list">
+
+            <li>
+              Fotoğraf kütüphanesine erişim için izniniz gerekir.
+            </li>
+
+            <li>
+              Hangi fotoğraf veya videoları silmek ya da işlemek istediğinize siz karar verirsiniz.
+            </li>
+
+            <li>
+              Smart Gallery fotoğraf veya video içeriklerinizi satmaz.
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <section class="section">
+
+          <h2 class="section-title">
+            3. Yüz Tespiti ve Gruplama
+          </h2>
+
+          <p class="section-body">
+Smart Gallery, yüz içeren fotoğrafları belirlemek ve fotoğraf düzenleme özellikleri sunmak için cihaz üzerinde yüz tespiti kullanabilir.
+
+Yüz tespiti ve ilgili işlemler cihazınız üzerinde yerel olarak gerçekleştirilir.
+
+Smart Gallery yüz görüntülerini, yüz şablonlarını, biyometrik tanımlayıcıları veya biyometrik bilgileri Smart Gallery sunucularına yüklemez.
+          </p>
+
+        </section>
+
+
+        <section class="section">
+
+          <h2 class="section-title">
+            4. Analitik
+          </h2>
+
+          <p class="section-body">
+Smart Gallery, uygulamanın nasıl kullanıldığını anlamak ve uygulama performansını ve özelliklerini geliştirmek amacıyla Firebase Analytics kullanabilir.
+
+Analitik bilgiler; cihaz türü, işletim sistemi sürümü, uygulama sürümü, ülke veya yaklaşık coğrafi bilgi, uygulama etkileşimleri, oturumlar ve özellik kullanımına ilişkin genel teknik ve kullanım bilgilerini içerebilir.
+
+Analitik verilerin kişisel fotoğraf veya videolarınızın içeriğini içermesi amaçlanmaz.
+          </p>
+
+          <div class="note">
+            Firebase hizmetleri Google tarafından sağlanmaktadır.
+            Google'ın bu hizmetler üzerinden gerçekleştirdiği veri
+            işlemleri Google'ın ilgili gizlilik politikalarına tabidir.
+          </div>
+
+        </section>
+
+
+        <section class="section">
+
+          <h2 class="section-title">
+            5. Reklamlar
+          </h2>
+
+          <p class="section-body">
+Smart Gallery, banner reklamlar ve ödüllü reklamlar dahil olmak üzere reklam göstermek amacıyla Google AdMob kullanır.
+
+AdMob; reklamları sunmak, ölçmek, güvenliğini sağlamak ve geliştirmek amacıyla cihaz tanımlayıcıları, IP adresi, genel cihaz bilgileri, reklam etkileşimleri ve reklam hizmetlerinin çalışması için gerekli diğer bilgileri işleyebilir.
+
+Google tarafından işlenen verilerin kapsamı; cihaz ayarlarınıza, bulunduğunuz bölgeye, izin ve onay tercihlerinize ve geçerli gizlilik mevzuatına bağlı olarak değişebilir.
+
+Smart Gallery, kişisel fotoğraf veya video dosyalarınızı reklam amacıyla AdMob'a sağlamaz.
+          </p>
+
+          <div class="note">
+            Reklam hizmetleri Google AdMob tarafından sağlanmaktadır.
+            Google'ın reklamla ilgili verileri işlemesi Google'ın
+            geçerli gizlilik ve reklam politikalarına tabidir.
+          </div>
+
+        </section>
+
+
+        <section class="section">
+
+          <h2 class="section-title">
+            6. Satın Almalar ve Abonelikler
+          </h2>
+
+          <p class="section-body">
+Smart Gallery isteğe bağlı Premium abonelikler ve uygulama içi satın alma özellikleri sunabilir.
+
+Satın alma işlemleri Apple App Store üzerinden gerçekleştirilir.
+
+Smart Gallery kredi kartı veya ödeme kartı bilgilerinizi doğrudan toplamaz veya saklamaz.
+
+Abonelik ve satın alma yetkilendirme bilgileri; işlemlerin tamamlanması ve Premium erişimin yönetilmesi amacıyla Apple ve RevenueCat tarafından işlenebilir.
+          </p>
+
+          <ul class="bullet-list">
+
+            <li>
+              App Store ödemeleri Apple tarafından işlenir.
+            </li>
+
+            <li>
+              RevenueCat abonelik durumunun ve Premium yetkilendirmelerinin yönetilmesine yardımcı olur.
+            </li>
+
+            <li>
+              RevenueCat; abonelik durumu, ürün kimliği, satın alma tarihi, yenileme durumu ve işlem bilgileri gibi satın alma ile ilgili bilgileri işleyebilir.
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <section class="section">
+
+          <h2 class="section-title">
+            7. Çökme ve Hata Raporlama
+          </h2>
+
+          <p class="section-body">
+Smart Gallery, uygulamadaki çökme, hata ve teknik sorunları tespit etmeye yardımcı olmak amacıyla Sentry kullanır.
+
+Sentry; uygulama sürümü, işletim sistemi bilgileri, cihaz bilgileri, hata ayrıntıları, stack trace bilgileri ve diğer teknik teşhis bilgileri gibi hata ile ilgili teknik bilgileri alabilir.
+
+Smart Gallery kişisel fotoğraf veya videolarınızın içeriğini kasıtlı olarak Sentry'ye göndermez.
+          </p>
+
+        </section>
+
+
+        <section class="section">
+
+          <h2 class="section-title">
+            8. Üçüncü Taraf Hizmetler
+          </h2>
+
+          <p class="section-body">
+Smart Gallery şu anda aşağıdaki üçüncü taraf hizmetleri kullanmaktadır:
+          </p>
+
+          <ul class="bullet-list">
+
+            <li>
+              <span>
+                <span class="service-name">
+                  Apple App Store
+                </span>
+                — uygulama dağıtımı ve ödeme işlemleri.
+              </span>
+            </li>
+
+            <li>
+              <span>
+                <span class="service-name">
+                  RevenueCat
+                </span>
+                — abonelik ve Premium yetkilendirme yönetimi.
+              </span>
+            </li>
+
+            <li>
+              <span>
+                <span class="service-name">
+                  Google AdMob
+                </span>
+                — reklamlar ve ödüllü reklamlar.
+              </span>
+            </li>
+
+            <li>
+              <span>
+                <span class="service-name">
+                  Firebase Analytics
+                </span>
+                — uygulama analitiği ve kullanım ölçümü.
+              </span>
+            </li>
+
+            <li>
+              <span>
+                <span class="service-name">
+                  Sentry
+                </span>
+                — çökme ve hata teşhisi.
+              </span>
+            </li>
+
+          </ul>
+
+          <p class="section-body">
+Bu hizmetler bilgileri kendi gizlilik politikaları ve geçerli yasal yükümlülükleri doğrultusunda işleyebilir.
+          </p>
+
+        </section>
+
+
+        <section class="section">
+
+          <h2 class="section-title">
+            9. Veri Paylaşımı
+          </h2>
+
+          <p class="section-body">
+Smart Gallery kişisel fotoğraf veya video içeriklerinizi satmaz.
+
+Bu politikada açıklanan üçüncü taraf hizmet sağlayıcıları; reklam, analitik, abonelik, satın alma, hata raporlama ve diğer uygulama işlevlerini sağlamak için gerekli olduğu ölçüde belirli bilgileri işleyebilir.
+
+Ayrıca geçerli yasa, düzenleme, yasal süreç veya hukuka uygun resmi makam talebi gerektirdiğinde bilgi paylaşımı yapılabilir.
+          </p>
+
+        </section>
+
+
+        <section class="section">
+
+          <h2 class="section-title">
+            10. Veri Güvenliği
+          </h2>
+
+          <p class="section-body">
+Smart Gallery aracılığıyla işlenen bilgileri korumaya yönelik makul teknik ve organizasyonel güvenlik önlemleri kullanıyoruz.
+
+Bununla birlikte hiçbir elektronik depolama veya veri aktarım yönteminin tamamen güvenli olduğu garanti edilemez.
+          </p>
+
+        </section>
+
+
+        <section class="section">
+
+          <h2 class="section-title">
+            11. Veri Saklama
+          </h2>
+
+          <p class="section-body">
+Smart Gallery kişisel fotoğraf veya video kütüphanenizin uzak sunucularda bağımsız bir kopyasını saklamaz.
+
+Üçüncü taraf hizmetler tarafından işlenen bilgiler, bu hizmet sağlayıcıların politikaları, yasal yükümlülükleri ve veri saklama süreleri doğrultusunda saklanabilir.
+
+Abonelik bilgileri, satın alma ve abonelik kayıtlarının yönetilmesi için gerekli olduğu sürece tutulabilir.
+          </p>
+
+        </section>
+
+
+        <section class="section">
+
+          <h2 class="section-title">
+            12. Çocukların Gizliliği
+          </h2>
+
+          <p class="section-body">
+Smart Gallery 13 yaşın altındaki çocuklara yönelik değildir.
+
+13 yaşından küçük çocuklardan bilerek doğrudan kişisel bilgi toplamıyoruz.
+
+Bir çocuğun uygulama aracılığıyla kişisel bilgi sağladığını düşünüyorsanız bizimle iletişime geçebilirsiniz.
+          </p>
+
+        </section>
+
+
+        <section class="section">
+
+          <h2 class="section-title">
+            13. Tercihleriniz
+          </h2>
+
+          <p class="section-body">
+Belirli uygulama izinlarını ve gizlilik tercihlerini iOS cihazınızın ayarlarından kontrol edebilirsiniz.
+
+Bulunduğunuz ülkeye ve geçerli mevzuata bağlı olarak hakkınızda işlenen kişisel bilgilerle ilgili ek haklara sahip olabilirsiniz.
+
+Gizlilikle ilgili soru veya talepleriniz için bizimle iletişime geçebilirsiniz.
+          </p>
+
+        </section>
+
+
+        <section class="section">
+
+          <h2 class="section-title">
+            14. Bu Gizlilik Politikasındaki Değişiklikler
+          </h2>
+
+          <p class="section-body">
+Bu Gizlilik Politikasını zaman zaman güncelleyebiliriz.
+
+Değişiklik yapıldığında güncellenmiş sürüm bu sayfada yayınlanacak ve "Son güncelleme" tarihi değiştirilecektir.
+          </p>
+
+        </section>
+
+
+        <section class="section">
+
+          <h2 class="section-title">
+            15. İletişim
+          </h2>
+
+          <p class="section-body">
+Bu Gizlilik Politikası veya Smart Gallery'nin gizlilik uygulamaları hakkında sorularınız için bizimle iletişime geçebilirsiniz:
+          </p>
+
+          <a
+            class="contact-link"
+            href="mailto:smartgalleryphoto@gmail.com"
+          >
+            smartgalleryphoto@gmail.com
+          </a>
+
+        </section>
+
+      </div>
+
+    </main>
+
+
+    <!-- =======================================================
+         FOOTER
+         ======================================================= -->
+
+    <footer class="site-footer">
+
+      <div>
+        © 2026 Smart Gallery. All rights reserved.
+      </div>
+
+      <div class="footer-links">
+
+        <a
+          href="https://smartgalleryphoto.com/"
+        >
+          Home
+        </a>
+
+        <a
+          href="https://smartgalleryphoto.com/terms"
+        >
+          Terms
+        </a>
+
+        <a
+          href="https://smartgalleryphoto.com/app-ads.txt"
+        >
+          app-ads.txt
+        </a>
+
+        <a
+          href="mailto:smartgalleryphoto@gmail.com"
+        >
+          Contact
+        </a>
+
+      </div>
+
+    </footer>
+
   </div>
 
-  <h1 class="page-title" id="page-title">Privacy Policy</h1>
 
-  <div class="header-meta">
-    <span class="updated-chip">
-      <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-        <circle cx="6" cy="6" r="5" stroke="currentColor" stroke-width="1.4"/>
-        <path d="M6 3.5V6l1.5 1.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
-      </svg>
-      <span id="updated-label">Last updated: August 17, 2026</span>
-    </span>
-
-    <div class="lang-toggle" role="group" aria-label="Language">
-      <button class="lang-btn" id="btn-en" onclick="setLang('en')">EN</button>
-      <button class="lang-btn active" id="btn-tr" onclick="setLang('tr')">TR</button>
-    </div>
-  </div>
-</header>
-
-
-<!-- ========================================================= -->
-<!-- ENGLISH                                                   -->
-<!-- ========================================================= -->
-
-<div class="policy-content" id="content-en">
-
-<div class="section">
-<h2 class="section-title">1. Information We Collect</h2>
-
-<p class="section-body">
-Smart Gallery: Photo Cleaner does not collect, store, or share personal data by default. Photo and video processing is performed entirely on your device.
-
-The optional "Email Cleaner" feature requires access to your Google account only when you explicitly choose to connect Gmail.
-</p>
-
-<ul class="bullet-list">
-<li>We do not upload your photo or video files to our servers.</li>
-<li>We do not collect your name, email address, or other identifying information unless you use the Email Cleaner feature.</li>
-<li>Google account data is accessed only after you explicitly authorize the Gmail integration.</li>
-</ul>
-</div>
-
-
-<div class="section">
-<h2 class="section-title">2. Photo Library Access</h2>
-
-<p class="section-body">
-The app requires access to your photo library to detect duplicate or similar photos and videos, compress videos, and help you clean your gallery.
-
-This processing takes place on your device. Photos and videos are not uploaded to our servers.
-</p>
-</div>
-
-
-<div class="section">
-<h2 class="section-title">3. Face Detection &amp; Grouping</h2>
-
-<p class="section-body">
-The app uses on-device face detection to automatically group similar portraits.
-
-Face detection and grouping are performed entirely on your device. Face data and biometric information are not uploaded to our servers, stored by us, or shared with third parties.
-</p>
-</div>
-
-
-<div class="section">
-  <h2 class="section-title">4. Gmail Integration (Email Cleaner)</h2>
-
-  <p class="section-body">
-    The app offers an optional "Email Cleaner" feature. This feature is activated
-    only when you explicitly choose to connect a Gmail account. Authentication is
-    performed through Google's official OAuth authentication system. We never see,
-    collect, or store your Gmail password.
-  </p>
-
-  <ul class="bullet-list">
-    <li>
-      We access the connected account's email address, message metadata such as
-      sender, subject, date, and Gmail category labels (including Social,
-      Promotions, Updates, and Forums). We do not intentionally read or process
-      the body/content of your emails.
-    </li>
-
-    <li>
-      Gmail data is used only to provide the Email Cleaner functionality you
-      explicitly request, including counting and listing emails by category,
-      moving emails you select to Gmail's Trash, and opening unsubscribe links.
-    </li>
-
-    <li>
-      The Gmail data accessed by Smart Gallery is processed locally on your
-      device. We do not operate a server that receives, stores, analyzes, or
-      transfers your Gmail data.
-    </li>
-
-    <li>
-      OAuth access and refresh tokens are stored locally on your device using
-      iOS Keychain secure storage. These credentials are not transmitted to
-      Smart Gallery servers or shared with third parties.
-    </li>
-
-    <li>
-      We request the Gmail <code>gmail.modify</code> permission because the
-      Email Cleaner feature must be able to move emails selected by the user
-      to Gmail's Trash. A more limited read-only Gmail permission would not
-      allow this user-initiated action. Smart Gallery does not use this
-      permission to send emails, compose emails, modify Gmail settings, or
-      manage Gmail labels.
-    </li>
-
-    <li>
-      Emails selected for deletion are moved to Gmail's Trash rather than
-      being permanently deleted by Smart Gallery. Gmail controls the retention
-      and permanent deletion of messages in Trash according to Google's
-      applicable Gmail policies.
-    </li>
-
-    <li>
-      Gmail user data is retained only for as long as it is necessary to
-      provide the Email Cleaner feature. When you disconnect your Gmail
-      account from Smart Gallery, the locally stored OAuth credentials for
-      that account are deleted from the device and the app no longer has
-      access to that account through the stored credentials.
-    </li>
-
-    <li>
-      You may also revoke Smart Gallery's access at any time through your
-      Google Account permissions page. After access is revoked, Smart Gallery
-      can no longer use the revoked authorization.
-    </li>
-  </ul>
-
-  <div class="note">
-    Smart Gallery handles Gmail user data in accordance with Google's API
-    Services User Data Policy, including the Limited Use requirements.
-  </div>
-</div>
-
-
-<div class="section">
-<h2 class="section-title">5. Google User Data Protection, Retention &amp; Deletion</h2>
-
-<p class="section-body">
-Smart Gallery applies technical and organizational measures designed to protect Google user data from unauthorized access, disclosure, alteration, or destruction.
-</p>
-
-<ul class="bullet-list">
-<li>Gmail OAuth access and refresh tokens are stored locally in iOS Keychain and are protected by Apple's platform security mechanisms.</li>
-
-<li>Smart Gallery does not operate a server that stores Gmail messages, Gmail message content, or Google user data.</li>
-
-<li>Gmail message information retrieved by the app is used temporarily to provide the Email Cleaner interface and is not retained in a remote database.</li>
-
-<li>Google user data is retained only for as long as necessary to provide the Gmail functionality requested by the user.</li>
-
-<li>When the user disconnects a Gmail account from Smart Gallery, the associated OAuth tokens stored by the app are deleted from the device.</li>
-
-<li>The user can also revoke Smart Gallery's Google account access through their Google Account security settings. After access is revoked, the app can no longer access the Gmail account using the revoked credentials.</li>
-
-<li>Messages moved to Gmail Trash by the user remain under Google's Gmail retention and deletion mechanisms. Smart Gallery does not permanently delete those messages from Google's systems.</li>
-
-<li>Smart Gallery does not maintain an independent copy of Gmail messages after the Gmail cleaning operation is completed.</li>
-</ul>
-</div>
-
-
-<div class="section">
-<h2 class="section-title">6. Purchases &amp; Subscriptions</h2>
-
-<p class="section-body">
-Smart Gallery offers an optional Premium yearly subscription. Purchases are processed through Apple's App Store.
-
-We do not collect or store payment card information.
-
-Purchase and subscription information is managed by Apple and RevenueCat. RevenueCat may process information such as subscription status and purchase date to manage subscription entitlements.
-</p>
-
-<div class="note">
-RevenueCat privacy policy: revenuecat.com/privacy
-</div>
-</div>
-
-
-<div class="section">
-<h2 class="section-title">7. Third-Party Services</h2>
-
-<p class="section-body">
-We use the following third-party services:
-</p>
-
-<ul class="bullet-list">
-<li><strong>Google Gmail API</strong> – used only when the user explicitly enables the Email Cleaner feature.</li>
-
-<li><strong>RevenueCat</strong> – subscription management and entitlement processing.</li>
-
-<li><strong>Apple App Store</strong> – payment processing and app distribution.</li>
-
-<li><strong>Sentry</strong> – crash and error reporting. Sentry may receive anonymous device and error information to help us diagnose technical issues. Photo files and Gmail content are not sent to Sentry.</li>
-</ul>
-
-<div class="note">
-No advertising or user-tracking SDKs are used by Smart Gallery.
-</div>
-</div>
-
-
-<div class="section">
-<h2 class="section-title">8. Children's Privacy</h2>
-
-<p class="section-body">
-This app is not directed at children under the age of 13. We do not knowingly collect personal information from children.
-</p>
-</div>
-
-
-<div class="section">
-<h2 class="section-title">9. Changes to This Policy</h2>
-
-<p class="section-body">
-We may update this Privacy Policy from time to time. Changes will be reflected on this page together with the updated date.
-</p>
-</div>
-
-
-<div class="section">
-<h2 class="section-title">10. Contact</h2>
-
-<p class="section-body">
-If you have questions about this Privacy Policy or our handling of Google user data, please contact us at:
-
-smartgalleryphoto@gmail.com
-</p>
-</div>
-
-</div>
-
-
-<!-- ========================================================= -->
-<!-- TURKISH                                                   -->
-<!-- ========================================================= -->
-
-<div class="policy-content visible" id="content-tr">
-
-<div class="section">
-<h2 class="section-title">1. Topladığımız Bilgiler</h2>
-
-<p class="section-body">
-Smart Gallery: Photo Cleaner varsayılan olarak kişisel veri toplamaz, depolamaz veya paylaşmaz. Fotoğraf ve video işlemleri tamamen cihazınız üzerinde gerçekleştirilir.
-
-İsteğe bağlı "E-posta Temizleyici" özelliği, yalnızca Gmail hesabınızı bağlamayı açıkça seçtiğinizde Google hesabınıza erişim gerektirir.
-</p>
-
-<ul class="bullet-list">
-<li>Fotoğraf veya video dosyalarınızı sunucularımıza yüklemiyoruz.</li>
-<li>E-posta Temizleyici özelliğini kullanmadığınız sürece adınızı, e-posta adresinizi veya diğer kimlik bilgilerinizi toplamıyoruz.</li>
-<li>Google hesap verilerine yalnızca Gmail entegrasyonuna açıkça izin verdikten sonra erişilir.</li>
-</ul>
-</div>
-
-
-<div class="section">
-<h2 class="section-title">2. Fotoğraf Kütüphanesi Erişimi</h2>
-
-<p class="section-body">
-Uygulama; tekrar eden veya benzer fotoğraf ve videoları tespit etmek, videoları sıkıştırmak ve galerinizi temizlemenize yardımcı olmak için fotoğraf kütüphanenize erişim gerektirir.
-
-Bu işlemler cihazınızda gerçekleştirilir. Fotoğraf ve videolar sunucularımıza yüklenmez.
-</p>
-</div>
-
-
-<div class="section">
-<h2 class="section-title">3. Yüz Tespiti ve Gruplama</h2>
-
-<p class="section-body">
-Uygulama, benzer portreleri otomatik olarak gruplamak için cihaz üzerinde yüz tespiti kullanır.
-
-Yüz tespiti ve gruplama tamamen cihazınızda gerçekleştirilir. Yüz verileri ve biyometrik bilgiler sunucularımıza yüklenmez, tarafımızca saklanmaz veya üçüncü taraflarla paylaşılmaz.
-</p>
-</div>
-
-
-<div class="section">
-  <h2 class="section-title">4. Gmail Entegrasyonu (E-posta Temizleyici)</h2>
-
-  <p class="section-body">
-    Uygulama, isteğe bağlı bir "E-posta Temizleyici" özelliği sunar. Bu özellik
-    yalnızca açıkça bir Gmail hesabı bağlamayı seçtiğinizde etkinleşir.
-    Kimlik doğrulama Google'ın resmi OAuth sistemi üzerinden gerçekleştirilir.
-    Gmail şifrenizi hiçbir zaman görmeyiz, toplamayız veya saklamayız.
-  </p>
-
-  <ul class="bullet-list">
-    <li>
-      Bağladığınız hesabın e-posta adresine, gönderen, konu ve tarih gibi
-      mesaj üst bilgilerine ve Gmail kategori etiketlerine (Sosyal, Promosyonlar,
-      Güncellemeler ve Forumlar dahil) erişiriz. E-postalarınızın gövdesini veya
-      içeriğini kasıtlı olarak okumayız veya işlemeyiz.
-    </li>
-
-    <li>
-      Gmail verileri yalnızca sizin açıkça talep ettiğiniz E-posta Temizleyici
-      işlevlerini sunmak için kullanılır. Buna kategori bazında e-posta sayma ve
-      listeleme, seçtiğiniz e-postaları Gmail Çöp Kutusu'na taşıma ve abonelikten
-      çıkma bağlantılarını açma dahildir.
-    </li>
-
-    <li>
-      Smart Gallery tarafından erişilen Gmail verileri cihazınız üzerinde
-      yerel olarak işlenir. Gmail verilerinizi alan, depolayan, analiz eden veya
-      aktaran bir Smart Gallery sunucusu işletmiyoruz.
-    </li>
-
-    <li>
-      OAuth erişim ve yenileme tokenları cihazınızda iOS Keychain güvenli
-      depolama alanında saklanır. Bu kimlik bilgileri Smart Gallery sunucularına
-      gönderilmez ve üçüncü taraflarla paylaşılmaz.
-    </li>
-
-    <li>
-      Gmail <code>gmail.modify</code> iznini, E-posta Temizleyici özelliğinin
-      kullanıcı tarafından seçilen e-postaları Gmail Çöp Kutusu'na taşıyabilmesi
-      gerektiği için kullanıyoruz. Salt okunur bir Gmail izni bu kullanıcı
-      tarafından başlatılan işlemi gerçekleştirmek için yeterli değildir.
-      Smart Gallery bu izni e-posta göndermek, e-posta oluşturmak, Gmail
-      ayarlarını değiştirmek veya Gmail etiketlerini yönetmek için kullanmaz.
-    </li>
-
-    <li>
-      Silinmek üzere seçtiğiniz e-postalar Smart Gallery tarafından kalıcı
-      olarak silinmez; Gmail'in Çöp Kutusu'na taşınır. Mesajların Çöp Kutusu'nda
-      tutulması ve kalıcı olarak silinmesi Google'ın geçerli Gmail politikalarına
-      tabidir.
-    </li>
-
-    <li>
-      Gmail kullanıcı verileri yalnızca E-posta Temizleyici özelliğini
-      sağlayabilmek için gerekli olduğu süre boyunca saklanır. Gmail hesabınızı
-      Smart Gallery'den ayırdığınızda, o hesaba ait cihazda saklanan OAuth
-      kimlik bilgileri silinir ve uygulama artık bu kayıtlı kimlik bilgileri
-      üzerinden hesabınıza erişemez.
-    </li>
-
-    <li>
-      Smart Gallery'nin erişimini Google Hesabınızın izinler sayfasından da
-      istediğiniz zaman iptal edebilirsiniz. Erişim iptal edildikten sonra
-      Smart Gallery iptal edilen yetkilendirmeyi kullanamaz.
-    </li>
-  </ul>
-
-  <div class="note">
-    Smart Gallery, Gmail kullanıcı verilerini Google API Services User Data
-    Policy ve Limited Use gereklilikleri dahil olmak üzere Google'ın ilgili
-    politikalarına uygun şekilde işler.
-  </div>
-</div>
-
-<div class="section">
-<h2 class="section-title">5. Google Kullanıcı Verilerinin Korunması, Saklanması ve Silinmesi</h2>
-
-<p class="section-body">
-Smart Gallery, Google kullanıcı verilerini yetkisiz erişim, ifşa, değiştirme veya yok edilmeye karşı korumaya yönelik teknik ve organizasyonel önlemler uygular.
-</p>
-
-<ul class="bullet-list">
-<li>Gmail OAuth erişim ve yenileme tokenları cihaz üzerinde iOS Keychain'de saklanır ve Apple'ın platform güvenlik mekanizmaları tarafından korunur.</li>
-
-<li>Smart Gallery; Gmail mesajlarını, Gmail mesaj içeriklerini veya Google kullanıcı verilerini saklayan bir sunucu işletmez.</li>
-
-<li>Uygulama tarafından alınan Gmail mesaj bilgileri, E-posta Temizleyici arayüzünü sağlamak için geçici olarak kullanılır ve uzak bir veritabanında saklanmaz.</li>
-
-<li>Google kullanıcı verileri yalnızca kullanıcı tarafından talep edilen Gmail işlevini sağlamak için gerekli olduğu süre boyunca tutulur.</li>
-
-<li>Kullanıcı Gmail hesabının bağlantısını Smart Gallery'den kaldırdığında, uygulama tarafından cihazda saklanan ilgili OAuth tokenları silinir.</li>
-
-<li>Kullanıcı ayrıca Google Hesabı güvenlik ayarlarından Smart Gallery'nin erişimini iptal edebilir. Erişim iptal edildikten sonra uygulama, iptal edilen kimlik bilgileriyle Gmail hesabına erişemez.</li>
-
-<li>Kullanıcı tarafından Gmail Çöp Kutusu'na taşınan mesajlar Google'ın Gmail saklama ve silme mekanizmalarına tabidir. Smart Gallery bu mesajları Google sistemlerinden kalıcı olarak silmez.</li>
-
-<li>Smart Gallery, Gmail temizleme işlemi tamamlandıktan sonra Gmail mesajlarının bağımsız bir kopyasını saklamaz.</li>
-</ul>
-</div>
-
-
-<div class="section">
-<h2 class="section-title">6. Satın Almalar ve Abonelikler</h2>
-
-<p class="section-body">
-Smart Gallery isteğe bağlı Premium yıllık abonelik sunar. Satın almalar Apple App Store üzerinden gerçekleştirilir.
-
-Kredi kartı veya ödeme bilgilerini toplamıyor veya saklamıyoruz.
-
-Satın alma ve abonelik bilgileri Apple ve RevenueCat tarafından yönetilir. RevenueCat, abonelik yetkilendirmelerini yönetmek için abonelik durumu ve satın alma tarihi gibi bilgileri işleyebilir.
-</p>
-
-<div class="note">
-RevenueCat gizlilik politikası: revenuecat.com/privacy
-</div>
-</div>
-
-
-<div class="section">
-<h2 class="section-title">7. Üçüncü Taraf Hizmetler</h2>
-
-<p class="section-body">
-Aşağıdaki üçüncü taraf hizmetlerini kullanıyoruz:
-</p>
-
-<ul class="bullet-list">
-<li><strong>Google Gmail API</strong> – yalnızca kullanıcı E-posta Temizleyici özelliğini açıkça etkinleştirdiğinde kullanılır.</li>
-
-<li><strong>RevenueCat</strong> – abonelik yönetimi ve yetkilendirme işlemleri.</li>
-
-<li><strong>Apple App Store</strong> – ödeme işlemleri ve uygulama dağıtımı.</li>
-
-<li><strong>Sentry</strong> – çökme ve hata raporlama. Sentry teknik sorunları teşhis etmemize yardımcı olmak için anonim cihaz ve hata bilgileri alabilir. Fotoğraf dosyaları ve Gmail içeriği Sentry'ye gönderilmez.</li>
-</ul>
-
-<div class="note">
-Smart Gallery'de reklam veya kullanıcı takip SDK'sı kullanılmamaktadır.
-</div>
-</div>
-
-
-<div class="section">
-<h2 class="section-title">8. Çocukların Gizliliği</h2>
-
-<p class="section-body">
-Bu uygulama 13 yaşın altındaki çocuklara yönelik değildir. Çocuklardan bilerek kişisel bilgi toplamıyoruz.
-</p>
-</div>
-
-
-<div class="section">
-<h2 class="section-title">9. Bu Politikadaki Değişiklikler</h2>
-
-<p class="section-body">
-Bu Gizlilik Politikasını zaman zaman güncelleyebiliriz. Değişiklikler güncellenmiş tarihle birlikte bu sayfada yayınlanacaktır.
-</p>
-</div>
-
-
-<div class="section">
-<h2 class="section-title">10. İletişim</h2>
-
-<p class="section-body">
-Bu Gizlilik Politikası veya Google kullanıcı verilerinin işlenmesi hakkında sorularınız için bizimle şu adresten iletişime geçebilirsiniz:
-
-smartgalleryphoto@gmail.com
-</p>
-</div>
-
-</div>
-
-
-<footer class="site-footer">
-Smart Gallery © 2026 · smartgalleryphoto@gmail.com
-</footer>
-
-</div>
-
-
-<script>
-const titles = {
-  en: 'Privacy Policy',
-  tr: 'Gizlilik Politikası'
-};
-
-const updatedLabels = {
-  en: 'Last updated: August 17, 2026',
-  tr: 'Son güncelleme: 17 Ağustos 2026'
-};
-
-function setLang(lang) {
-  document.getElementById('content-en').classList.toggle('visible', lang === 'en');
-  document.getElementById('content-tr').classList.toggle('visible', lang === 'tr');
-  document.getElementById('btn-en').classList.toggle('active', lang === 'en');
-  document.getElementById('btn-tr').classList.toggle('active', lang === 'tr');
-  document.getElementById('page-title').textContent = titles[lang];
-  document.getElementById('updated-label').textContent = updatedLabels[lang];
-  document.documentElement.lang = lang;
-}
-
-setLang('tr');
-</script>
+  <script>
+    const titles = {
+      en: "Privacy Policy",
+      tr: "Gizlilik Politikası"
+    };
+
+    const descriptions = {
+      en:
+        "This policy explains how Smart Gallery handles information and protects your privacy.",
+
+      tr:
+        "Smart Gallery'nin verilerinizi nasıl kullandığını ve gizliliğinizi nasıl koruduğunu açıklayan politika."
+    };
+
+    const updatedLabels = {
+      en:
+        "Last updated: September 1, 2026",
+
+      tr:
+        "Son güncelleme: 1 Eylül 2026"
+    };
+
+    function setLang(lang) {
+      const isEnglish =
+        lang === "en";
+
+      document
+        .getElementById("content-en")
+        .classList
+        .toggle(
+          "visible",
+          isEnglish
+        );
+
+      document
+        .getElementById("content-tr")
+        .classList
+        .toggle(
+          "visible",
+          !isEnglish
+        );
+
+      document
+        .getElementById("btn-en")
+        .classList
+        .toggle(
+          "active",
+          isEnglish
+        );
+
+      document
+        .getElementById("btn-tr")
+        .classList
+        .toggle(
+          "active",
+          !isEnglish
+        );
+
+      document
+        .getElementById("page-title")
+        .textContent =
+        titles[lang];
+
+      document
+        .getElementById("header-description")
+        .textContent =
+        descriptions[lang];
+
+      document
+        .getElementById("updated-label")
+        .textContent =
+        updatedLabels[lang];
+
+      document.documentElement.lang =
+        lang;
+    }
+
+    setLang("tr");
+  </script>
 
 </body>
 </html>
