@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
-Disallow: /.config/
+Disallow: /sgcfg-8f4c2a91/
 
 User-agent: Google-adstxt
 Allow: /app-ads.txt
