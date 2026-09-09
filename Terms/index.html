@@ -1,551 +1,181 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  />
-
-  <title>Smart Gallery - Terms of Service</title>
-
-  <meta
-    name="description"
-    content="Terms of Service for Smart Gallery: Photo Cleaner."
-  />
-
-  <meta
-    name="robots"
-    content="index, follow"
-  />
-
-  <link
-    rel="canonical"
-    href="https://smartgalleryphoto.com/terms"
-  />
-
-  <style>
-    :root {
-      --bg: #f8f7fc;
-      --card: #ffffff;
-      --text: #17131f;
-      --muted: #625b6c;
-      --accent: #7c3aed;
-      --accent-dark: #6d28d9;
-      --border: #e8e3ef;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      padding: 40px 20px;
-
-      background:
-        radial-gradient(
-          circle at top,
-          rgba(124, 58, 237, 0.08),
-          transparent 350px
-        ),
-        var(--bg);
-
-      color: var(--text);
-
-      font-family:
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        Roboto,
-        Helvetica,
-        Arial,
-        sans-serif;
-
-      line-height: 1.7;
-
-      -webkit-font-smoothing: antialiased;
-    }
-
-    .container {
-      width: 100%;
-      max-width: 800px;
-
-      margin: 0 auto;
-
-      padding: 42px;
-
-      background: var(--card);
-
-      border:
-        1px solid var(--border);
-
-      border-radius: 20px;
-
-      box-shadow:
-        0 10px 35px
-        rgba(55, 34, 82, 0.07);
-    }
-
-    .app-label {
-      margin-bottom: 8px;
-
-      color: var(--accent);
-
-      font-size: 13px;
-      font-weight: 700;
-
-      letter-spacing: 0.06em;
-
-      text-transform: uppercase;
-    }
-
-    h1 {
-      margin:
-        0
-        0
-        8px;
-
-      color: var(--text);
-
-      font-size:
-        clamp(
-          32px,
-          6vw,
-          44px
-        );
-
-      line-height: 1.1;
-
-      letter-spacing: -0.03em;
-    }
-
-    .effective-date {
-      margin-bottom: 30px;
-
-      color: var(--muted);
-
-      font-size: 14px;
-    }
-
-    h2 {
-      margin:
-        34px
-        0
-        10px;
-
-      color: var(--text);
-
-      font-size: 21px;
-
-      line-height: 1.3;
-    }
-
-    p {
-      margin:
-        0
-        0
-        16px;
-
-      color: var(--muted);
-    }
-
-    ul {
-      margin:
-        10px
-        0
-        18px;
-
-      padding-left:
-        22px;
-
-      color: var(--muted);
-    }
-
-    li {
-      margin-bottom: 8px;
-    }
-
-    a {
-      color: var(--accent);
-
-      text-decoration: none;
-
-      font-weight: 500;
-    }
-
-    a:hover {
-      color: var(--accent-dark);
-      text-decoration: underline;
-    }
-
-    .note {
-      margin-top: 18px;
-
-      padding:
-        14px
-        16px;
-
-      border-left:
-        3px solid var(--accent);
-
-      border-radius:
-        0
-        8px
-        8px
-        0;
-
-      background: #f5f0ff;
-
-      color: var(--muted);
-
-      font-size: 14px;
-    }
-
-    footer {
-      margin-top: 44px;
-
-      padding-top: 22px;
-
-      border-top:
-        1px solid var(--border);
-
-      color: var(--muted);
-
-      font-size: 13px;
-    }
-
-    .footer-links {
-      display: flex;
-
-      gap: 16px;
-
-      flex-wrap: wrap;
-
-      margin-top: 8px;
-    }
-
-    @media (max-width: 640px) {
-      body {
-        padding:
-          20px
-          14px;
-      }
-
-      .container {
-        padding:
-          28px
-          22px;
-      }
-    }
-  </style>
-</head>
-
-<body>
-
-  <main class="container">
-
-    <div class="app-label">
-      Smart Gallery: Photo Cleaner
+<!DOCTYPE html><html lang="tr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Smart Gallery — Terms of Service</title><meta name="description" content="Terms of Service for Smart Gallery: Photo Cleaner.">
+<link rel="canonical" href="https://smartgalleryphoto.com/terms">
+<style>
+:root{
+  --page-bg:#f8f7ff;--surface:rgba(255,255,255,.88);--surface-solid:#fff;--surface-soft:#f7f4ff;
+  --surface-hover:#fbfaff;--text:#17131f;--text-sub:#655d72;--text-faint:#8c8498;--accent:#7c3aed;
+  --accent-strong:#6d28d9;--accent-soft:#ede9fe;--accent-light:#c4b5fd;--border:rgba(91,70,123,.13);
+  --border-strong:rgba(124,58,237,.18);--shadow-lg:0 24px 70px rgba(58,38,91,.10),0 4px 18px rgba(58,38,91,.05);
+  --hero-gradient:linear-gradient(135deg,#5b21b6 0%,#7c3aed 45%,#9f67ff 100%);
+}
+:root[data-theme="dark"]{
+  --page-bg:#0d0b14;--surface:rgba(21,18,31,.90);--surface-solid:#15121f;--surface-soft:#1b1730;
+  --surface-hover:#1a1627;--text:#f1edff;--text-sub:#bbb4c9;--text-faint:#8f879f;--accent:#b49cff;
+  --accent-strong:#a78bfa;--accent-soft:#241c3d;--accent-light:#c4b5fd;--border:rgba(196,181,253,.12);
+  --border-strong:rgba(167,139,250,.20);--shadow-lg:none;
+  --hero-gradient:linear-gradient(135deg,#3b176f 0%,#5b21b6 48%,#7c3aed 100%);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  min-height:100vh;padding:28px 20px 72px;overflow-x:hidden;
+  background:radial-gradient(circle at 12% 0%,rgba(167,139,250,.18),transparent 28%),
+             radial-gradient(circle at 88% 12%,rgba(124,58,237,.10),transparent 25%),var(--page-bg);
+  color:var(--text);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased
+}
+a{color:var(--accent)}
+.wrap{position:relative;z-index:1;width:100%;max-width:960px;margin:0 auto}
+.site-header{position:relative;overflow:hidden;margin-bottom:26px;padding:34px 36px 36px;border:1px solid rgba(255,255,255,.16);
+  border-radius:28px;background:var(--hero-gradient);box-shadow:0 28px 70px rgba(91,33,182,.24)}
+.site-header:before,.site-header:after{content:"";position:absolute;border-radius:999px;pointer-events:none}
+.site-header:before{top:-88px;right:-42px;width:230px;height:230px;background:radial-gradient(circle,rgba(255,255,255,.24),rgba(255,255,255,0) 68%)}
+.site-header:after{right:120px;bottom:-120px;width:260px;height:260px;border:1px solid rgba(255,255,255,.10)}
+.header-top{position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;gap:20px;margin-bottom:46px}
+.app-name{display:flex;align-items:center;gap:12px}
+.app-icon{width:46px;height:46px;display:grid;place-items:center;flex-shrink:0;border:1px solid rgba(255,255,255,.22);border-radius:14px;
+  background:rgba(255,255,255,.15);backdrop-filter:blur(12px);color:#fff;font-size:15px;font-weight:800}
+.app-label{color:rgba(255,255,255,.86);font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.top-actions{display:flex;align-items:center;gap:10px}
+.theme-toggle,.lang-toggle{border:1px solid rgba(255,255,255,.18);border-radius:12px;background:rgba(255,255,255,.10);backdrop-filter:blur(12px)}
+.theme-toggle{width:42px;height:42px;display:grid;place-items:center;color:#fff;cursor:pointer}
+.lang-toggle{display:inline-flex;gap:4px;padding:4px}
+.lang-btn{min-width:50px;padding:8px 13px;border:0;border-radius:9px;background:transparent;color:rgba(255,255,255,.72);cursor:pointer;font-size:12px;font-weight:800}
+.lang-btn.active{background:#fff;color:var(--accent-strong)}
+.header-copy{position:relative;z-index:1;max-width:760px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;margin-bottom:14px;padding:7px 11px;border:1px solid rgba(255,255,255,.16);border-radius:999px;
+  background:rgba(255,255,255,.10);color:rgba(255,255,255,.90);font-size:12px;font-weight:700}
+.eyebrow-dot{width:7px;height:7px;border-radius:50%;background:#ddd6fe;box-shadow:0 0 0 5px rgba(255,255,255,.10)}
+.page-title{margin-bottom:14px;color:#fff;font-size:clamp(38px,7vw,58px);font-weight:800;letter-spacing:-.05em;line-height:.98}
+.header-description{max-width:680px;margin-bottom:24px;color:rgba(255,255,255,.78);font-size:15px;line-height:1.65}
+.header-meta{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.updated-chip{display:inline-flex;align-items:center;gap:7px;padding:8px 12px;border:1px solid rgba(255,255,255,.16);border-radius:999px;
+  background:rgba(255,255,255,.10);color:rgba(255,255,255,.84);font-size:12px;font-weight:600}
+.card{overflow:hidden;margin-bottom:22px;padding:28px 30px;border:1px solid var(--border);border-radius:24px;background:var(--surface);box-shadow:var(--shadow-lg);backdrop-filter:blur(18px)}
+.section-title{display:flex;align-items:center;gap:12px;margin-bottom:15px;color:var(--text);font-size:20px;font-weight:800;letter-spacing:-.015em}
+.section-title:before{content:"";width:9px;height:9px;flex:0 0 9px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent-light));box-shadow:0 0 0 6px var(--accent-soft)}
+.section-body{color:var(--text-sub);font-size:15px;line-height:1.78;white-space:pre-line}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:18px}
+.feature{padding:18px;border:1px solid var(--border);border-radius:16px;background:var(--surface-soft)}
+.feature-icon{width:42px;height:42px;margin-bottom:12px;display:grid;place-items:center;border-radius:12px;background:var(--accent-soft);color:var(--accent);font-size:20px}
+.feature h3{margin-bottom:6px;font-size:16px;color:var(--text)}
+.feature p{color:var(--text-sub);font-size:14px;line-height:1.6}
+.bullet-list{display:grid;gap:10px;margin-top:16px;list-style:none}
+.bullet-list li{position:relative;padding:11px 14px 11px 38px;border:1px solid var(--border);border-radius:12px;background:var(--surface-soft);color:var(--text-sub);font-size:14px}
+.bullet-list li:before{content:"✓";position:absolute;top:11px;left:14px;display:grid;width:17px;height:17px;place-items:center;border-radius:50%;background:var(--accent-soft);color:var(--accent);font-size:10px;font-weight:900}
+.note{position:relative;margin-top:18px;padding:16px 17px 16px 46px;border:1px solid var(--border-strong);border-radius:14px;background:linear-gradient(135deg,var(--accent-soft),transparent 135%);color:var(--text-sub);font-size:13px}
+.note:before{content:"i";position:absolute;top:17px;left:17px;display:grid;width:20px;height:20px;place-items:center;border-radius:50%;background:var(--accent);color:#fff;font-family:Georgia,serif;font-size:12px;font-weight:700}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}
+.button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 20px;border-radius:13px;background:var(--accent);color:#fff;text-decoration:none;font-weight:800}
+.button.secondary{background:var(--surface-solid);color:var(--accent);border:1px solid var(--border-strong)}
+.contact-link{display:inline-flex;align-items:center;gap:8px;margin-top:14px;padding:11px 14px;border:1px solid var(--border-strong);border-radius:12px;background:var(--accent-soft);color:var(--accent);text-decoration:none;font-weight:700}
+.contact-link:before{content:"✉"}
+.content-lang{display:none}.content-lang.visible{display:block}
+.site-footer{margin-top:28px;padding:24px 12px 0;color:var(--text-faint);text-align:center;font-size:12px}
+.footer-links{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:12px}
+.footer-links a{padding:7px 10px;border-radius:9px;color:var(--text-faint);text-decoration:none}
+@media(max-width:680px){
+ body{padding:12px 12px 48px}.site-header{margin-bottom:14px;padding:20px 20px 26px;border-radius:22px}.header-top{margin-bottom:34px}
+ .app-icon{width:42px;height:42px}.app-label{display:none}.theme-toggle{width:38px;height:38px}.lang-btn{min-width:42px;padding:7px 10px}
+ .card{padding:22px 18px;border-radius:20px}.page-title{font-size:clamp(34px,12vw,46px)}.header-description{font-size:14px}
+}
+</style>
+</head><body><div class="wrap">
+
+<header class="site-header">
+  <div class="header-top">
+    <div class="app-name"><div class="app-icon">SG</div><span class="app-label">Smart Gallery: Photo Cleaner</span></div>
+    <div class="top-actions">
+      <button class="theme-toggle" type="button" onclick="toggleTheme()" aria-label="Tema değiştir"><span id="theme-icon">☾</span></button>
+      <div class="lang-toggle">
+        <button class="lang-btn" id="btn-en" onclick="setLang('en')">EN</button>
+        <button class="lang-btn active" id="btn-tr" onclick="setLang('tr')">TR</button>
+      </div>
     </div>
-
-    <h1>
-      Terms of Service
-    </h1>
-
-    <p class="effective-date">
-      <strong>Effective date:</strong>
-      September 1, 2026
-    </p>
-
-    <p>
-      Welcome to Smart Gallery.
-      By downloading, accessing, or using the Smart Gallery application,
-      you agree to these Terms of Service.
-      If you do not agree to these Terms, please do not use the application.
-    </p>
-
-
-    <h2>
-      1. Use of the App
-    </h2>
-
-    <p>
-      Smart Gallery is designed to help users organize and manage
-      photos and videos stored on their device.
-    </p>
-
-    <p>
-      Features may include identifying duplicate or similar photos,
-      detecting potentially blurry photos, organizing screenshots,
-      reviewing media, deleting selected items, and compressing videos.
-    </p>
-
-    <p>
-      You are responsible for reviewing the items you choose to delete
-      or modify before confirming an action.
-    </p>
-
-
-    <h2>
-      2. Photo Library Access
-    </h2>
-
-    <p>
-      Smart Gallery requires permission to access your photo library
-      in order to provide its photo and video management features.
-    </p>
-
-    <p>
-      Photo and video analysis used by Smart Gallery is generally
-      performed locally on your device.
-      Smart Gallery does not upload your personal photo or video files
-      to Smart Gallery servers for gallery analysis.
-    </p>
-
-
-    <h2>
-      3. Deleting and Modifying Content
-    </h2>
-
-    <p>
-      Certain features allow you to delete photos or videos,
-      or compress and otherwise process media stored on your device.
-    </p>
-
-    <p>
-      You are responsible for confirming that you no longer need
-      content before deleting or replacing it.
-      Smart Gallery is not responsible for content deleted,
-      modified, compressed, or otherwise changed as a result
-      of actions you confirm within the app.
-    </p>
-
-
-    <h2>
-      4. Premium Subscriptions
-    </h2>
-
-    <p>
-      Smart Gallery may offer optional Premium features through
-      auto-renewable subscriptions or other in-app purchases.
-    </p>
-
-    <p>
-      Payments are processed through Apple's App Store.
-      Smart Gallery does not directly collect or store your
-      payment card information.
-    </p>
-
-    <p>
-      Subscription status and Premium access may be managed
-      using RevenueCat.
-    </p>
-
-    <ul>
-      <li>
-        Subscriptions may automatically renew unless cancelled
-        according to Apple's subscription rules.
-      </li>
-
-      <li>
-        Billing and cancellation are managed through your
-        Apple ID and App Store subscription settings.
-      </li>
-
-      <li>
-        Pricing and subscription terms are displayed
-        before purchase.
-      </li>
-    </ul>
-
-
-    <h2>
-      5. Advertising and Rewarded Ads
-    </h2>
-
-    <p>
-      Smart Gallery may display advertisements using Google AdMob.
-    </p>
-
-    <p>
-      Some features may allow users to watch rewarded advertisements
-      in exchange for limited in-app benefits, credits, or access
-      to certain functionality.
-    </p>
-
-    <p>
-      Availability and value of advertising rewards may change
-      over time.
-      Advertising services may also be unavailable in certain
-      regions or circumstances.
-    </p>
-
-
-    <h2>
-      6. Third-Party Services
-    </h2>
-
-    <p>
-      Smart Gallery may rely on third-party services
-      including Apple App Store, RevenueCat,
-      Google AdMob, Firebase, and Sentry.
-    </p>
-
-    <p>
-      These third-party services operate according to
-      their own terms and privacy policies.
-    </p>
-
-
-    <h2>
-      7. Availability of the Service
-    </h2>
-
-    <p>
-      We aim to keep Smart Gallery available and functioning properly,
-      but we do not guarantee that the application or every feature
-      will always be available, uninterrupted, or error-free.
-    </p>
-
-    <p>
-      Features may be modified, added, restricted,
-      suspended, or removed as the application evolves.
-    </p>
-
-
-    <h2>
-      8. Acceptable Use
-    </h2>
-
-    <p>
-      You agree not to misuse Smart Gallery,
-      attempt to interfere with its operation,
-      reverse engineer the application where prohibited by law,
-      or use the application for unlawful purposes.
-    </p>
-
-
-    <h2>
-      9. Intellectual Property
-    </h2>
-
-    <p>
-      Smart Gallery, including its design, branding,
-      software, interface, and related content,
-      is protected by applicable intellectual property laws.
-    </p>
-
-    <p>
-      These Terms do not grant you ownership of
-      Smart Gallery or its intellectual property.
-    </p>
-
-
-    <h2>
-      10. Limitation of Liability
-    </h2>
-
-    <p>
-      Smart Gallery is provided on an "as is"
-      and "as available" basis to the extent permitted by law.
-    </p>
-
-    <p>
-      We do not guarantee that the app will be error-free
-      or suitable for every particular purpose.
-    </p>
-
-    <p>
-      To the maximum extent permitted by applicable law,
-      Smart Gallery and its developer will not be liable
-      for indirect, incidental, special, consequential,
-      or similar damages resulting from the use of
-      or inability to use the application.
-    </p>
-
-    <p>
-      Nothing in these Terms excludes rights or protections
-      that cannot legally be excluded under applicable law.
-    </p>
-
-
-    <h2>
-      11. Privacy
-    </h2>
-
-    <p>
-      Your use of Smart Gallery is also subject to
-      our Privacy Policy.
-    </p>
-
-    <p>
-      You can review the Privacy Policy at:
-      <a href="https://smartgalleryphoto.com/privacy">
-        smartgalleryphoto.com/privacy
-      </a>
-    </p>
-
-
-    <h2>
-      12. Changes to These Terms
-    </h2>
-
-    <p>
-      We may update these Terms from time to time
-      to reflect changes to the application,
-      legal requirements, or our services.
-    </p>
-
-    <p>
-      Updated Terms will be published on this page.
-      Continued use of the application after an update
-      constitutes acceptance of the revised Terms
-      to the extent permitted by applicable law.
-    </p>
-
-
-    <h2>
-      13. Contact
-    </h2>
-
-    <p>
-      If you have questions about these Terms,
-      please contact:
-    </p>
-
-    <p>
-      <a href="mailto:smartgalleryphoto@gmail.com">
-        smartgalleryphoto@gmail.com
-      </a>
-    </p>
-
-
-    <footer>
-
-      <div>
-        © 2026 Smart Gallery. All rights reserved.
-      </div>
-
-      <div class="footer-links">
-
-        <a href="https://smartgalleryphoto.com/">
-          Home
-        </a>
-
-        <a href="https://smartgalleryphoto.com/privacy">
-          Privacy Policy
-        </a>
-
-        <a href="https://smartgalleryphoto.com/app-ads.txt">
-          app-ads.txt
-        </a>
-
-      </div>
-
-    </footer>
-
-  </main>
-
-</body>
-</html>
+  </div>
+  <div class="header-copy">
+    <div class="eyebrow"><span class="eyebrow-dot"></span><span data-tr="Kullanım koşulları" data-en="Terms & conditions">Kullanım koşulları</span></div>
+    <h1 class="page-title" data-tr="Kullanım Koşulları" data-en="Terms of Service">Kullanım Koşulları</h1>
+    <p class="header-description" data-tr="Smart Gallery'yi kullanırken geçerli olan temel kullanım, abonelik ve içerik yönetimi koşulları." data-en="Terms that apply when using Smart Gallery, including media management, contacts cleanup and subscriptions.">Smart Gallery'yi kullanırken geçerli olan temel kullanım, abonelik ve içerik yönetimi koşulları.</p>
+    <div class="header-meta">
+      <span class="updated-chip"><span data-tr="Son güncelleme: 9 Eylül 2026" data-en="Last updated: September 9, 2026">Son güncelleme: 9 Eylül 2026</span></span>
+    </div>
+  </div>
+</header>
+
+<main>
+<div id="content-tr" class="content-lang visible">
+<section class="card"><h2 class="section-title">1. Uygulamanın Kullanımı</h2><p class="section-body">Smart Gallery; cihazınızdaki fotoğraf, video ve rehber kayıtlarını düzenlemenize yardımcı olmak için tasarlanmıştır. Uygulamayı indirerek veya kullanarak bu koşulları kabul etmiş olursunuz.</p></section>
+<section class="card"><h2 class="section-title">2. Fotoğraf ve Video Erişimi</h2><p class="section-body">Tekrarlanan veya benzer fotoğrafları bulma, bulanık fotoğrafları tespit etme, ekran görüntülerini düzenleme, medya silme ve video sıkıştırma gibi özellikler için fotoğraf kütüphanesi erişimi gerekir. Analizler genel olarak cihaz üzerinde gerçekleştirilir.</p></section>
+<section class="card"><h2 class="section-title">3. Rehber Erişimi ve Birleştirme</h2><p class="section-body">Smart Gallery, aynı telefon numarası veya e-posta adresini içeren tekrar eden kişi kayıtlarını bulmak için rehber erişimi isteyebilir.
+
+Birleştirme, düzenleme veya silme işlemlerini onaylamadan önce kayıtları gözden geçirmek kullanıcının sorumluluğundadır. Smart Gallery, kullanıcının onayladığı rehber değişikliklerinden doğabilecek veri kaybından, geçerli hukukun izin verdiği ölçüde sorumlu değildir.</p></section>
+<section class="card"><h2 class="section-title">4. İçeriğin Silinmesi ve Değiştirilmesi</h2><p class="section-body">Silme, sıkıştırma veya başka bir değişiklik işlemini onaylamadan önce içeriği kontrol etmek sizin sorumluluğunuzdadır. Smart Gallery, sizin onayladığınız işlemler sonucunda silinen veya değiştirilen içerikten sorumlu değildir.</p></section>
+<section class="card"><h2 class="section-title">5. Premium Abonelikler</h2><p class="section-body">Smart Gallery isteğe bağlı Premium özellikler ve uygulama içi satın almalar sunabilir. Ödemeler App Store üzerinden işlenir ve abonelik durumu RevenueCat tarafından yönetilebilir.</p><ul class="bullet-list"><li>Abonelikler platform kurallarına göre otomatik yenilenebilir.</li><li>Fiyat ve abonelik koşulları satın alma öncesinde gösterilir.</li><li>İptal ve faturalandırma ilgili mağaza hesabınız üzerinden yönetilir.</li></ul></section>
+<section class="card"><h2 class="section-title">6. Reklamlar ve Ödüllü Reklamlar</h2><p class="section-body">Smart Gallery Google AdMob üzerinden banner veya ödüllü reklamlar gösterebilir. Ödül miktarı, kullanılabilirlik ve erişim koşulları zaman içinde değişebilir.</p></section>
+<section class="card"><h2 class="section-title">7. Üçüncü Taraf Hizmetler</h2><p class="section-body">Smart Gallery; Apple App Store, RevenueCat, Google AdMob, Firebase ve Sentry gibi üçüncü taraf hizmetlerden yararlanabilir. Bu hizmetlerin kendi kullanım ve gizlilik koşulları geçerlidir.</p></section>
+<section class="card"><h2 class="section-title">8. Hizmetin Kullanılabilirliği</h2><p class="section-body">Uygulamanın veya her özelliğin her zaman kesintisiz, hatasız veya sürekli kullanılabilir olacağı garanti edilmez. Özellikler zaman içinde değiştirilebilir, eklenebilir, sınırlandırılabilir veya kaldırılabilir.</p></section>
+<section class="card"><h2 class="section-title">9. Kabul Edilebilir Kullanım</h2><p class="section-body">Smart Gallery'yi hukuka aykırı amaçlarla kullanmamayı, çalışmasına müdahale etmemeyi ve kanunen yasaklandığı ölçüde tersine mühendislik yapmamayı kabul edersiniz.</p></section>
+<section class="card"><h2 class="section-title">10. Fikri Mülkiyet</h2><p class="section-body">Smart Gallery'nin yazılımı, tasarımı, markası ve arayüzü geçerli fikri mülkiyet mevzuatıyla korunmaktadır.</p></section>
+<section class="card"><h2 class="section-title">11. Sorumluluğun Sınırlandırılması</h2><p class="section-body">Smart Gallery, geçerli hukukun izin verdiği ölçüde “olduğu gibi” ve “mevcut olduğu şekilde” sunulur. Dolaylı, arızi, özel veya sonuç olarak ortaya çıkan zararlardan sorumluluk, yasaların izin verdiği azami ölçüde sınırlandırılır.</p></section>
+<section class="card"><h2 class="section-title">12. Gizlilik</h2><p class="section-body">Smart Gallery kullanımı ayrıca Gizlilik Politikamıza tabidir.</p><a class="contact-link" href="https://smartgalleryphoto.com/privacy">Gizlilik Politikası</a></section>
+<section class="card"><h2 class="section-title">13. Koşullardaki Değişiklikler</h2><p class="section-body">Bu koşullar uygulamadaki veya yasal gerekliliklerdeki değişiklikleri yansıtmak için zaman zaman güncellenebilir. Güncel sürüm bu sayfada yayınlanır.</p></section>
+<section class="card"><h2 class="section-title">14. İletişim</h2><a class="contact-link" href="mailto:smartgalleryphoto@gmail.com">smartgalleryphoto@gmail.com</a></section>
+</div>
+<div id="content-en" class="content-lang">
+<section class="card"><h2 class="section-title">1. Use of the App</h2><p class="section-body">Smart Gallery is designed to help you organize photos, videos and contact records stored on your device. By downloading or using the app, you agree to these Terms.</p></section>
+<section class="card"><h2 class="section-title">2. Photo and Video Access</h2><p class="section-body">Photo-library access is required for features such as finding duplicate or similar photos, detecting blurry images, organizing screenshots, deleting media and compressing videos. Analysis is generally performed on your device.</p></section>
+<section class="card"><h2 class="section-title">3. Contacts Access and Merging</h2><p class="section-body">Smart Gallery may request access to your contacts to identify duplicate contact records that share the same phone number or email address.
+
+You are responsible for reviewing contact records before confirming a merge, edit or deletion. To the extent permitted by applicable law, Smart Gallery is not responsible for data loss resulting from contact changes you confirm.</p></section>
+<section class="card"><h2 class="section-title">4. Deleting and Modifying Content</h2><p class="section-body">You are responsible for reviewing content before confirming deletion, compression or other changes. Smart Gallery is not responsible for content deleted or modified as a result of actions you confirm.</p></section>
+<section class="card"><h2 class="section-title">5. Premium Subscriptions</h2><p class="section-body">Smart Gallery may offer optional Premium features and in-app purchases. Payments are processed through the App Store and subscription status may be managed through RevenueCat.</p><ul class="bullet-list"><li>Subscriptions may renew automatically according to platform rules.</li><li>Pricing and subscription terms are shown before purchase.</li><li>Billing and cancellation are managed through your store account.</li></ul></section>
+<section class="card"><h2 class="section-title">6. Advertising and Rewarded Ads</h2><p class="section-body">Smart Gallery may display banner or rewarded ads through Google AdMob. Reward amounts, availability and access conditions may change over time.</p></section>
+<section class="card"><h2 class="section-title">7. Third-Party Services</h2><p class="section-body">Smart Gallery may rely on third-party services including Apple App Store, RevenueCat, Google AdMob, Firebase and Sentry. Their own terms and privacy policies apply.</p></section>
+<section class="card"><h2 class="section-title">8. Service Availability</h2><p class="section-body">We do not guarantee that the app or every feature will always be available, uninterrupted or error-free. Features may be changed, added, restricted, suspended or removed over time.</p></section>
+<section class="card"><h2 class="section-title">9. Acceptable Use</h2><p class="section-body">You agree not to use Smart Gallery unlawfully, interfere with its operation or reverse engineer the app where prohibited by law.</p></section>
+<section class="card"><h2 class="section-title">10. Intellectual Property</h2><p class="section-body">Smart Gallery software, design, branding and interface are protected by applicable intellectual-property laws.</p></section>
+<section class="card"><h2 class="section-title">11. Limitation of Liability</h2><p class="section-body">To the extent permitted by law, Smart Gallery is provided on an “as is” and “as available” basis. Liability for indirect, incidental, special or consequential damages is limited to the maximum extent permitted by applicable law.</p></section>
+<section class="card"><h2 class="section-title">12. Privacy</h2><p class="section-body">Your use of Smart Gallery is also subject to our Privacy Policy.</p><a class="contact-link" href="https://smartgalleryphoto.com/privacy">Privacy Policy</a></section>
+<section class="card"><h2 class="section-title">13. Changes to These Terms</h2><p class="section-body">These Terms may be updated to reflect changes to the app or legal requirements. The current version will be published on this page.</p></section>
+<section class="card"><h2 class="section-title">14. Contact</h2><a class="contact-link" href="mailto:smartgalleryphoto@gmail.com">smartgalleryphoto@gmail.com</a></section>
+</div>
+</main>
+<footer class="site-footer">
+  <div>© 2026 Smart Gallery. All rights reserved.</div>
+  <div class="footer-links">
+    <a href="https://smartgalleryphoto.com/">Home</a>
+    <a href="https://smartgalleryphoto.com/privacy">Privacy</a>
+    <a href="https://smartgalleryphoto.com/terms">Terms</a>
+    <a href="https://smartgalleryphoto.com/app-ads.txt">app-ads.txt</a>
+    <a href="mailto:smartgalleryphoto@gmail.com">Contact</a>
+  </div>
+</footer>
+</div>
+<script>
+function applyTheme(theme){
+  const dark=theme==="dark";
+  document.documentElement.setAttribute("data-theme",dark?"dark":"light");
+  const icon=document.getElementById("theme-icon");
+  if(icon) icon.textContent=dark?"☀":"☾";
+  localStorage.setItem("smartGalleryTheme",dark?"dark":"light");
+}
+function toggleTheme(){
+  const current=document.documentElement.getAttribute("data-theme")||"light";
+  applyTheme(current==="dark"?"light":"dark");
+}
+function setLang(lang){
+  document.querySelectorAll(".content-lang").forEach(el=>el.classList.remove("visible"));
+  const active=document.getElementById("content-"+lang); if(active) active.classList.add("visible");
+  document.querySelectorAll(".lang-btn").forEach(el=>el.classList.remove("active"));
+  const btn=document.getElementById("btn-"+lang); if(btn) btn.classList.add("active");
+  document.documentElement.lang=lang;
+  document.querySelectorAll("[data-en][data-tr]").forEach(el=>{
+    el.textContent=el.getAttribute("data-"+lang);
+  });
+}
+applyTheme(localStorage.getItem("smartGalleryTheme")==="dark"?"dark":"light");
+setLang("tr");
+</script>
+</body></html>
