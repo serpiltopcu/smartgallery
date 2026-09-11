@@ -1,0 +1,17 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.serpilbosnali.smartgallery",
+      "sha256_cert_fingerprints": [
+        "17:32:46:A8:6E:EE:D5:A8:AD:12:2A:F6:F3:A8:2D:03:8F:A5:CE:47:C2:1E:A1:F3:D3:57:2A:A3:D0:5F:E9:B8",
+        "59:18:BC:41:A8:A3:1C:C3:42:3E:95:C5:04:3C:08:FF:C5:C0:4F:7F:7B:85:34:3A:E1:49:37:F6:67:B8:BB:9F",
+        "FE:1E:4D:01:1C:A3:47:E0:BA:FD:3C:AB:04:8F:C1:C1:0E:66:CF:1B:FC:B4:0B:DC:9D:9F:93:B4:23:37:72:13"
+      ]
+    }
+  }
+]
