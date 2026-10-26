@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Smart Gallery – Telefonunda yer aç</title>
-<meta name="description" content="Smart Gallery; kopya, benzer ve bulanık fotoğrafları bulur, büyük videoları sıkıştırır, kişi listeni temizler. Tüm analiz cihazında yapılır.">
+<title>Smart Gallery: Kopya ve Benzer Fotoğraf Temizleme Uygulaması</title>
+<meta name="description" content="iPhone ve Android için galeri temizleme uygulaması. Kopya, benzer ve bulanık fotoğrafları bulur, büyük videoları sıkıştırır. Tüm analiz cihazında, yükleme yok.">
 <meta name="theme-color" content="#0c0a14" media="(prefers-color-scheme: dark)">
 <meta name="theme-color" content="#f7f6fb" media="(prefers-color-scheme: light)">
 <script>
@@ -13,11 +13,30 @@ if(t!=='light'&&t!=='dark'){t=window.matchMedia&&matchMedia('(prefers-color-sche
 document.documentElement.setAttribute('data-theme',t)})();
 </script>
 <link rel="icon" href="/assets/icon-192.png">
-<meta property="og:title" content="Smart Gallery – Telefonunda yer aç">
-<meta property="og:description" content="Kopya ve benzer fotoğrafları bul, kaydırarak temizle, büyük videoları sıkıştır. Fotoğrafların telefonundan çıkmaz.">
-<meta property="og:image" content="https://smartgalleryphoto.com/assets/icon-512.png">
+<link rel="canonical" href="https://smartgalleryphoto.com/">
+<link rel="apple-touch-icon" href="/assets/icon-192.png">
+<meta name="apple-itunes-app" content="app-id=6783930004">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Smart Gallery">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:locale:alternate" content="en_US">
 <meta property="og:url" content="https://smartgalleryphoto.com/">
-<meta name="twitter:card" content="summary">
+<meta property="og:title" content="Smart Gallery: Kopya ve Benzer Fotoğraf Temizleme Uygulaması">
+<meta property="og:description" content="Kopya, benzer ve bulanık fotoğrafları bul, kaydırarak temizle, büyük videoları sıkıştır. Fotoğrafların telefonundan çıkmaz.">
+<meta property="og:image" content="https://smartgalleryphoto.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Smart Gallery: kopya ve benzer fotoğraf temizleme uygulaması">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Smart Gallery: Kopya ve Benzer Fotoğraf Temizleme Uygulaması">
+<meta name="twitter:description" content="Kopya, benzer ve bulanık fotoğrafları bul, kaydırarak temizle, büyük videoları sıkıştır. Fotoğrafların telefonundan çıkmaz.">
+<meta name="twitter:image" content="https://smartgalleryphoto.com/assets/og-image.png">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"WebSite","@id":"https://smartgalleryphoto.com/#website","url":"https://smartgalleryphoto.com/","name":"Smart Gallery","alternateName":"Smart Gallery Photo Cleaner","inLanguage":["tr","en"]},
+{"@type":"MobileApplication","@id":"https://smartgalleryphoto.com/#app","name":"Smart Gallery: Photo Cleaner","alternateName":"Smart Gallery","description":"iPhone ve Android için galeri temizleme uygulaması. Kopya, benzer ve bulanık fotoğrafları bulur, büyük videoları sıkıştırır. Tüm analiz cihazında, yükleme yok.","url":"https://smartgalleryphoto.com/","image":"https://smartgalleryphoto.com/assets/icon-512.png","operatingSystem":"iOS, Android","applicationCategory":"UtilitiesApplication","inLanguage":["tr","en"],"offers":{"@type":"Offer","price":"0","priceCurrency":"TRY"},"installUrl":"https://apps.apple.com/app/smart-gallery-photo-cleaner/id6783930004","sameAs":["https://apps.apple.com/app/smart-gallery-photo-cleaner/id6783930004","https://play.google.com/store/apps/details?id=com.serpilbosnali.smartgallery"]}
+]}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -283,7 +302,7 @@ footer a:hover{color:var(--text)}
 
 <header>
   <div class="wrap nav">
-    <a class="brand" href="/"><img src="/assets/icon-192.png" alt="" onerror="this.style.display='none'">Smart Gallery</a>
+    <a class="brand" href="/"><img src="/assets/icon-192.png" alt="" width="32" height="32" onerror="this.style.display='none'">Smart Gallery</a>
     <ul>
       <li><a href="#features"><span data-l="tr">Özellikler</span><span data-l="en">Features</span></a></li>
       <li><a href="#how"><span data-l="tr">Nasıl çalışır</span><span data-l="en">How it works</span></a></li>
@@ -308,7 +327,7 @@ footer a:hover{color:var(--text)}
     <div>
       <div class="pill"><i></i><span data-l="tr">Tüm analiz cihazında · Sunucuya yükleme yok</span><span data-l="en">All analysis on-device · No uploads</span></div>
       <h1><span data-l="tr">Galerini <em>dakikalar içinde</em> temizle.</span><span data-l="en">Clean up your gallery <em>in minutes</em>.</span></h1>
-      <p class="lead"><span data-l="tr">Smart Gallery kopya ve benzer fotoğrafları, seri çekimleri, bulanık kareleri ve yer kaplayan videoları bulur. Sola kaydır sil, sağa kaydır sakla. Son kararı her zaman sen verirsin.</span><span data-l="en">Smart Gallery finds duplicates, similar shots, bursts, blurry photos and space-hungry videos. Swipe left to delete, right to keep. You always make the final call.</span></p>
+      <p class="lead"><span data-l="tr">Smart Gallery, iPhone ve Android için bir galeri temizleme uygulamasıdır. Kopya ve benzer fotoğrafları, seri çekimleri, bulanık kareleri ve yer kaplayan videoları bulur. Sola kaydır sil, sağa kaydır sakla. Son kararı her zaman sen verirsin.</span><span data-l="en">Smart Gallery is a photo cleaner app for iPhone and Android. It finds duplicates, similar shots, bursts, blurry photos and space-hungry videos. Swipe left to delete, right to keep. You always make the final call.</span></p>
       <div class="stores">
         <a class="store" href="https://apps.apple.com/app/smart-gallery-photo-cleaner/id6783930004" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.6c0-2.6 2.1-3.8 2.2-3.9-1.2-1.8-3.1-2-3.7-2-1.6-.2-3.1.9-3.9.9-.8 0-2-.9-3.4-.9-1.7 0-3.3 1-4.2 2.6-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.2 2.6 1.3-.1 1.8-.8 3.3-.8 1.6 0 2 .8 3.4.8 1.4 0 2.3-1.3 3.1-2.5 1-1.4 1.4-2.8 1.4-2.9-.1 0-2.7-1-2.7-4.1zM13.9 5c.7-.9 1.2-2 1-3.2-1 0-2.3.7-3 1.6-.7.8-1.2 2-1.1 3.1 1.2.1 2.3-.6 3.1-1.5z"/></svg>
@@ -328,7 +347,7 @@ footer a:hover{color:var(--text)}
 
     <div class="hero-phones" aria-hidden="true">
       <!-- Home -->
-      <div class="phone p1"><div class="scr">
+      <div lang="en" class="phone p1"><div class="scr">
         <div class="sb"><span>11:22</span><b></b><span>●●●</span></div>
         <div class="ph-body">
           <div><div class="ph-h">Smart Gallery</div><div style="font-size:8px;color:#8c87a0">The easy way to free up gallery space</div></div>
@@ -348,7 +367,7 @@ footer a:hover{color:var(--text)}
         <div class="tabbar"><span class="on">Home</span><span>Videos</span><span>Clean</span><span>Contacts</span><span>Settings</span></div>
       </div></div>
       <!-- Clean -->
-      <div class="phone p2"><div class="scr">
+      <div lang="en" class="phone p2"><div class="scr">
         <div class="sb"><span>11:24</span><b></b><span>●●●</span></div>
         <div class="ph-body">
           <div class="ph-title">Clean</div>
@@ -403,7 +422,7 @@ footer a:hover{color:var(--text)}
         </ul>
       </div>
       <div class="fvis" aria-hidden="true">
-        <div class="phone"><div class="scr">
+        <div lang="en" class="phone"><div class="scr">
           <div class="sb"><span>11:23</span><b></b><span>●●●</span></div>
           <div class="ph-body">
             <div class="row-h"><span style="font-size:13px">‹</span><span style="font-size:13px;font-weight:800">Scan</span><span style="color:var(--red)">Stop</span></div>
@@ -440,7 +459,7 @@ footer a:hover{color:var(--text)}
         </ul>
       </div>
       <div class="fvis" aria-hidden="true">
-        <div class="phone"><div class="scr">
+        <div lang="en" class="phone"><div class="scr">
           <div class="sb"><span>11:23</span><b></b><span>●●●</span></div>
           <div class="ph-body">
             <div class="row-h"><span style="font-size:13px">✕</span><span style="text-align:center;font-size:12px;font-weight:800">Quick review<small style="text-align:center">2 / 4</small></span><span></span></div>
@@ -466,7 +485,7 @@ footer a:hover{color:var(--text)}
         </ul>
       </div>
       <div class="fvis" aria-hidden="true">
-        <div class="phone"><div class="scr">
+        <div lang="en" class="phone"><div class="scr">
           <div class="sb"><span>11:23</span><b></b><span>●●●</span></div>
           <div class="ph-body">
             <div class="row-h"><span style="font-size:13px">‹</span><span style="text-align:center;font-size:12px;font-weight:800">To Delete<small style="text-align:center">59 photos</small></span><span></span></div>
@@ -496,7 +515,7 @@ footer a:hover{color:var(--text)}
         </ul>
       </div>
       <div class="fvis" aria-hidden="true">
-        <div class="phone"><div class="scr">
+        <div lang="en" class="phone"><div class="scr">
           <div class="sb"><span>11:24</span><b></b><span>●●●</span></div>
           <div class="ph-body">
             <div class="ph-h">Videos</div>
@@ -624,7 +643,7 @@ footer a:hover{color:var(--text)}
   function set(l){
     root.lang=l;
     document.querySelectorAll('.lang button').forEach(function(b){b.setAttribute('aria-pressed', b.dataset.set===l)});
-    document.title = l==='tr' ? 'Smart Gallery – Telefonunda yer aç' : 'Smart Gallery – Free up space on your phone';
+    document.title = l==='tr' ? 'Smart Gallery: Kopya ve Benzer Fotoğraf Temizleme Uygulaması' : 'Smart Gallery: Duplicate & Similar Photo Cleaner App';
     try{localStorage.setItem('sg-lang',l)}catch(e){}
   }
   var saved=null; try{saved=localStorage.getItem('sg-lang')}catch(e){}
