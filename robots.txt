@@ -4,3 +4,5 @@ Disallow: /sgcfg-8f4c2a91/
 
 User-agent: Google-adstxt
 Allow: /app-ads.txt
+
+Sitemap: https://smartgalleryphoto.com/sitemap.xml
