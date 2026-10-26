@@ -245,20 +245,38 @@ footer a:hover{color:var(--text)}
   gtag('config', 'G-MDKP7RHJZP');
 </script>
 
+
 <style>
-  /* Mevcut tasarımı koruyarak yalnızca öncelikli mağaza
-     bağlantısını vurgular. */
-  a.sg-store-primary {
-    outline: 2px solid currentColor;
-    outline-offset: 3px;
-    font-weight: 700;
+  /* Varsayılan mağaza bağlantısı */
+  .sg-store-primary {
+    opacity: 1 !important;
+    transform: scale(1.04);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.14);
+    transition: all 0.2s ease;
   }
 
-  a.sg-store-secondary {
-    opacity: 0.82;
+  /* Diğer mağaza bağlantısı */
+  .sg-store-secondary {
+    opacity: 0.65;
+    transform: scale(0.97);
+    transition: all 0.2s ease;
+  }
+
+  /* Üzerine gelindiğinde */
+  .sg-store-primary:hover,
+  .sg-store-secondary:hover {
+    opacity: 1;
+    transform: scale(1.04);
+  }
+
+  /* Mobil cihazlarda animasyonu sadeleştir */
+  @media (prefers-reduced-motion: reduce) {
+    .sg-store-primary,
+    .sg-store-secondary {
+      transition: none;
+    }
   }
 </style>
-
 </head>
 <body>
 <a class="skip" href="#main"><span data-l="tr">İçeriğe geç</span><span data-l="en">Skip to content</span></a>
