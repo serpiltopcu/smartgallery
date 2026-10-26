@@ -232,6 +232,33 @@ footer nav{display:flex;gap:20px;flex-wrap:wrap}
 footer a{text-decoration:none}
 footer a:hover{color:var(--text)}
 </style>
+  
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MDKP7RHJZP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+
+<style>
+  /* Mevcut tasarımı koruyarak yalnızca öncelikli mağaza
+     bağlantısını vurgular. */
+  a.sg-store-primary {
+    outline: 2px solid currentColor;
+    outline-offset: 3px;
+    font-weight: 700;
+  }
+
+  a.sg-store-secondary {
+    opacity: 0.82;
+  }
+</style>
+
 </head>
 <body>
 <a class="skip" href="#main"><span data-l="tr">İçeriğe geç</span><span data-l="en">Skip to content</span></a>
@@ -598,6 +625,69 @@ footer a:hover{color:var(--text)}
       if(!s) root.setAttribute('data-theme',e.matches?'light':'dark');
     });
   }
+})();
+</script>
+  
+<script>
+(() => {
+  const links = [...document.querySelectorAll('a[href]')];
+
+  const storeLinks = links.map((link) => {
+    const href = link.href.toLowerCase();
+
+    if (href.includes('apps.apple.com')) {
+      return { link, store: 'app_store' };
+    }
+
+    if (
+      href.includes('play.google.com') ||
+      href.startsWith('market://')
+    ) {
+      return { link, store: 'google_play' };
+    }
+
+    return null;
+  }).filter(Boolean);
+
+  const ua = navigator.userAgent || '';
+  const isAndroid = /android/i.test(ua);
+  const isIOS = /iphone|ipad|ipod/i.test(ua);
+
+  // Masaüstünde iki mağaza bağlantısını da eşit bırak.
+  const preferredStore = isIOS
+    ? 'app_store'
+    : isAndroid
+      ? 'google_play'
+      : null;
+
+  storeLinks.forEach(({ link, store }) => {
+    link.classList.remove(
+      'sg-store-primary',
+      'sg-store-secondary'
+    );
+
+    if (preferredStore) {
+      link.classList.add(
+        store === preferredStore
+          ? 'sg-store-primary'
+          : 'sg-store-secondary'
+      );
+    }
+
+    link.addEventListener('click', () => {
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', 'store_click', {
+          store_name: store,
+          link_url: link.href,
+          device_category: isIOS
+            ? 'ios'
+            : isAndroid
+              ? 'android'
+              : 'other'
+        });
+      }
+    });
+  });
 })();
 </script>
 </body>
