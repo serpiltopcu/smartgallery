@@ -648,37 +648,44 @@ footer a:hover{color:var(--text)}
   
 <script>
 (() => {
-  const links = [...document.querySelectorAll('a[href]')];
-
-  const storeLinks = links.map((link) => {
-    const href = link.href.toLowerCase();
-
-    if (href.includes('apps.apple.com')) {
-      return { link, store: 'app_store' };
-    }
-
-    if (
-      href.includes('play.google.com') ||
-      href.startsWith('market://')
-    ) {
-      return { link, store: 'google_play' };
-    }
-
-    return null;
-  }).filter(Boolean);
+  const links = document.querySelectorAll('a[href]');
 
   const ua = navigator.userAgent || '';
   const isAndroid = /android/i.test(ua);
-  const isIOS = /iphone|ipad|ipod/i.test(ua);
+  const isIOS = /iphone|ipad|ipod/i.test(ua) ||
+    (navigator.platform === 'MacIntel' &&
+     navigator.maxTouchPoints > 1);
 
-  // Masaüstünde iki mağaza bağlantısını da eşit bırak.
+  const deviceCategory = isIOS
+    ? 'ios'
+    : isAndroid
+      ? 'android'
+      : 'other';
+
   const preferredStore = isIOS
     ? 'app_store'
     : isAndroid
       ? 'google_play'
       : null;
 
-  storeLinks.forEach(({ link, store }) => {
+  links.forEach((link) => {
+    const url = new URL(link.href, window.location.href);
+
+    let store = null;
+
+    if (
+      url.hostname.toLowerCase() === 'apps.apple.com'
+    ) {
+      store = 'app_store';
+    } else if (
+      url.hostname.toLowerCase() === 'play.google.com' &&
+      url.pathname.startsWith('/store/apps')
+    ) {
+      store = 'google_play';
+    }
+
+    if (!store) return;
+
     link.classList.remove(
       'sg-store-primary',
       'sg-store-secondary'
@@ -697,11 +704,7 @@ footer a:hover{color:var(--text)}
         window.gtag('event', 'store_click', {
           store_name: store,
           link_url: link.href,
-          device_category: isIOS
-            ? 'ios'
-            : isAndroid
-              ? 'android'
-              : 'other'
+          device_category: deviceCategory
         });
       }
     });
