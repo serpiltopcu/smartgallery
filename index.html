@@ -656,12 +656,7 @@ footer a:hover{color:var(--text)}
     root.setAttribute('data-theme',t);
     try{localStorage.setItem('sg-theme',t)}catch(e){}
   });
-  if(window.matchMedia){
-    matchMedia('(prefers-color-scheme: light)').addEventListener('change',function(e){
-      var s=null;try{s=localStorage.getItem('sg-theme')}catch(_){}
-      if(!s) root.setAttribute('data-theme',e.matches?'light':'dark');
-    });
-  }
+ 
 })();
 </script>
   
