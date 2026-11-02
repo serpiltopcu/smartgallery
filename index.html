@@ -717,5 +717,28 @@ footer a:hover{color:var(--text)}
 })();
 </script>
      <script src="/assets/sg-photos.js"></script>
+  <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/13.1.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/13.1.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyCgkgLsrYlQAFoPF0ZSn8uiL86MbUirDqw",
+    authDomain: "smartgallery-web.firebaseapp.com",
+    projectId: "smartgallery-web",
+    storageBucket: "smartgallery-web.firebasestorage.app",
+    messagingSenderId: "57004821511",
+    appId: "1:57004821511:web:a0ee842d51f337da4eaea2",
+    measurementId: "G-MDKP7RHJZP"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
 </body>
 </html>
